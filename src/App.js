@@ -26,17 +26,28 @@ function App() {
       blob.animate({
         left: `${clientX}px`,
         top: `${clientY}px`
-      }, {duration: 2000, fill: "forwards"})
+      }, {duration: 3000, fill: "forwards"})
     }
   }
-  return (
-    <>
-    <div id="blob"></div>
-    <div id="blur"></div>
-    <Navbar/>
-    <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
-    </>
-  );
+  if (isMobile) {
+    return (
+      <>
+      <div id="blob" className="blob-small"></div>
+      <div id="blur"></div>
+      <Navbar/>
+      <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
+      </>
+    );
+  } else {
+    return (
+      <>
+      <div id="blob"></div>
+      <div id="blur"></div>
+      <Navbar/>
+      <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
+      </>
+    );
+  }
 }
 
 export default App;

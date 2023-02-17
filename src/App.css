@@ -27,6 +27,10 @@
     animation: rotate 20s infinite;
 }
 
+.blob-small {
+    height: 225px !important;
+}
+
 #blur {
     top: 0;
     height: 100%;
