@@ -10,15 +10,21 @@
 img {
     width: 50px;
 }
+.esmt-logo {
+    position: relative;
+    width: 100px;
+    top: -18%;
+}
+.left {
+    align-items: center;
+}
 .right {
     display: flex;
     align-items: center;
 }
-
-
 .glow-on-hover {
     position: absolute;
-    margin-right: 20px;
+    margin-right: 12px;
     width: 150px;
     height: 50px;
     font-size: 1.15rem;

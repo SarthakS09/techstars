@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import navLogo from '../Assets/logo-white.png';
+import esmtLogo from '../Assets/esmt.svg'
 import hamburger from '../Assets/Group-2.png'
 import '../Styles/Navbar.css'
+
 
 export default function Navbar() {
   const [offset, setOffset] = useState(0);
@@ -21,6 +23,7 @@ export default function Navbar() {
 
           <div className='left'>
             <img src={navLogo}/>
+            <img src={esmtLogo} className='esmt-logo'/>
           </div>
 
           <div className='right'>
