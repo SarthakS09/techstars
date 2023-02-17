@@ -21,7 +21,7 @@
     border-radius: 50%;
     background: linear-gradient(
         to bottom,
-        aquamarine,
+        #F9D182,
         mediumpurple
     );
     animation: rotate 20s infinite;

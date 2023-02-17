@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
 
           <div className='right'>
-              <a className='glow-on-hover' href="#" style={mountedStyle}>Schedule</a>
+              <a className='glow-on-hover' href="#">Schedule</a>
             <img src={hamburger}/>
           </div>
 
