@@ -26,7 +26,7 @@ function App() {
       blob.animate({
         left: `${clientX}px`,
         top: `${clientY}px`
-      }, {duration: 3000, fill: "forwards"})
+      }, {duration: 4000, fill: "forwards"})
     }
   }
   if (isMobile) {
