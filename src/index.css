@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Antique";
+  src: url("Assets/Fonts/Antique/")
+}
+@font-face {
   font-family: "Matter";
   src: url("Assets/Fonts/Matter/Matter-Regular.otf")
 }
