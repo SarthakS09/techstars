@@ -2,12 +2,15 @@ import Navbar from "./Components/Navbar";
 import { useState, useEffect } from 'react';
 import './App.css'
 import Footer from "./Components/Footer";
+import Home from "./Components/Home";
 
 function handleWindowSizeChange() {
     
 }
 
 function App() {
+
+  // getting window width
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener('resize', ()=>{
@@ -19,6 +22,8 @@ function App() {
         });
     }
   }, []);
+  
+  // checking if display is mobile
   const isMobile = width <= 768;
   if (!isMobile) {
     document.body.onpointermove = event => {
@@ -29,28 +34,25 @@ function App() {
         top: `${clientY}px`
       }, {duration: 4000, fill: "forwards"})
     }
-  }
-  if (isMobile) {
-    return (
-      <>
-      <div id="blob" className="blob-small"></div>
-      <div id="blur-less"></div>
-      <Navbar/>
-      <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
-      <Footer/>
-      </>
-    );
   } else {
-    return (
-      <>
-      <div id="blob"></div>
-      <div id="blur"></div>
+    const blob = document.getElementById('blob');
+    blob.animate({
+      left: `50%`,
+      top: `50%`
+    }, {duration: 4000, fill: "forwards"})
+  }
+
+  // returning jsx
+  return (
+    <>
+      <div id="blob" className={isMobile ? "blob-small" : ""}></div>
+      <div id={isMobile ? "blur-less" : "blur"}></div>
       <Navbar/>
+      <Home/>
       <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
       <Footer/>
-      </>
-    );
-  }
+    </>
+  );
 }
 
 export default App;

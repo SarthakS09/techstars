@@ -9,11 +9,11 @@ export default function Home() {
         </div>
 
         <div className='speakers'>
-            <h2>events</h2>
+            <h2>speakers</h2>
         </div>
 
         <div className='collaborations'>
-            <h2>events</h2>
+            <h2>collaborations</h2>
         </div>
     </>
   )
