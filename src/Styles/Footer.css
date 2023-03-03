@@ -3,15 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px white solid;
-    border-bottom: 2px white solid;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
     height: 15vw;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .see-you {
-    border-right: 2px white solid;
+    border-right: 1px white solid;
     width: 55%;
 }
 
