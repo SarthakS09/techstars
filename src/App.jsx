@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar";
 import { useState, useEffect } from 'react';
 import './App.css'
+import Footer from "./Components/Footer";
 
 function handleWindowSizeChange() {
     
@@ -33,9 +34,10 @@ function App() {
     return (
       <>
       <div id="blob" className="blob-small"></div>
-      <div id="blur"></div>
+      <div id="blur-less"></div>
       <Navbar/>
       <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
+      <Footer/>
       </>
     );
   } else {
@@ -45,6 +47,7 @@ function App() {
       <div id="blur"></div>
       <Navbar/>
       <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
+      <Footer/>
       </>
     );
   }

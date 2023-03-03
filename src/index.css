@@ -3,6 +3,10 @@
   src: url("Assets/Fonts/Matter/Matter-Regular.otf")
 }
 @font-face {
+  font-family: "MatterLight";
+  src: url("Assets/Fonts/Matter/Matter-Light.otf")
+}
+@font-face {
   font-family: "MatterBold";
   src: url("Assets/Fonts/Matter/Matter-Bold.otf")
 }

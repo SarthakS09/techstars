@@ -1,15 +1,10 @@
-* {
-    font-family: 'MatterBold', sans-serif;
-}
-
 .nav {
     display: flex;
     width: calc(100vw - 85px);
-    align-items: center;
     justify-content: space-between;
     background-color: transparent;
     margin: 15px 85px;
-    padding-top: 13px;
+    padding-top: 26px;
 }
 
 .nav-fixed {
@@ -37,8 +32,8 @@ img {
     align-items: center;
 }
 .glow-on-hover {
-    position: absolute;
-    margin-right: 120px;
+    margin-right: 100px;
+    top: -24%;
     width: 150px;
     height: 50px;
     font-size: 1.15rem;

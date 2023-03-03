@@ -1,3 +1,7 @@
+* {
+    color: white;
+}
+
 @keyframes rotate {
     from {
         rotate: 0deg;
@@ -25,17 +29,23 @@
         mediumpurple
     );
     animation: rotate 20s infinite;
+    z-index: -2;
 }
 
 .blob-small {
     height: 225px !important;
 }
 
-#blur {
+#blur, #blur-less {
     top: 0;
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 0;
+    z-index: -1;
     backdrop-filter: blur(200px);
 }
+
+#blur-less {
+    backdrop-filter: blur(150px);
+}
+
