@@ -9,7 +9,7 @@ export default function Footer() {
             <div className='see-you'>
                 <img src={seeYou} className='see-you-img'/>
             </div>
-            <div className='ftr-links'>
+            <div id='ftr-links' className='ftr-links'>
                 <a>instagram →</a>
                 <a>linkedin →</a>
                 <a>twitter →</a>
