@@ -2,7 +2,8 @@ import Navbar from "./Components/Navbar";
 import { useState, useEffect } from 'react';
 import './App.css'
 import Footer from "./Components/Footer";
-import Home from "./Components/Home";
+import Home from "./Pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -37,8 +38,9 @@ function App() {
       <div id="blob" className={isMobile ? "blob-small" : ""}></div>
       <div id={isMobile ? "blur-less" : "blur"}></div>
       <Navbar/>
-      <Home/>
-      <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
       <Footer/>
     </>
   );

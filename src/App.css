@@ -47,6 +47,5 @@
 }
 
 #blur-less {
-    backdrop-filter: blur(150px);
+    backdrop-filter: blur(120px);
 }
-
