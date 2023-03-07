@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import scrollDown from '../Assets/scroll-down.svg'
 import '../Styles/Home.css'
 
 export default function Home() {
@@ -12,16 +13,26 @@ export default function Home() {
         <h1 className='t3 animate__animated animate__bounceInRight'>💸 opportunity.</h1>
       </div>
 
+      <h2>the coolest events 🤩</h2>
       <div className='events'>
-          <h2>events</h2>
+          <div className='shark-tank-box'>
+            <h3>Shark Tank</h3>
+          </div>
+          <div className='productathon-box'>
+            <h3>Productathon</h3>
+          </div>
+      </div>
+      <div className="viewEvents">
+        <h4>view all events →</h4>
       </div>
 
-      <div className='speakers'>
-          <h2>speakers</h2>
+      <div className='speakers-card'>
+          <h2>the best speakers 🤯</h2>
+          <p>Sample text demonstrating how cool and diverse our speaker line-up is</p>
       </div>
 
       <div className='collaborations'>
-          <h2>collaborations</h2>
+          <h2>actually useful collaborations 🤝</h2>
       </div>
   </>
   )
