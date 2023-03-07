@@ -50,6 +50,7 @@ img {
     text-align: center;
     line-height: 45px;
     transition: 0.2s;
+    z-index: 2;
 }
 
 .glow-on-hover:hover {
