@@ -42,7 +42,6 @@ function App() {
     }, {duration: 4000, fill: "forwards"})
   }
 
-  // returning jsx
   return (
     <>
       <div id="blob" className={isMobile ? "blob-small" : ""}></div>
