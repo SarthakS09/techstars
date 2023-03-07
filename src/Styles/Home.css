@@ -3,3 +3,7 @@ h2 {
     font-weight: 700;
     text-align: center;
 }
+
+.landing {
+    height: calc(100vh - 50px);
+}

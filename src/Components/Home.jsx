@@ -4,6 +4,10 @@ import '../Styles/Home.css'
 export default function Home() {
   return (
   <>
+      <div className="landing">
+        hello
+      </div>
+
       <div className='events'>
           <h2>events</h2>
       </div>
