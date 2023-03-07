@@ -4,10 +4,6 @@ import './App.css'
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 
-function handleWindowSizeChange() {
-    
-}
-
 function App() {
 
   // getting window width
@@ -34,12 +30,6 @@ function App() {
         top: `${clientY}px`
       }, {duration: 4000, fill: "forwards"})
     }
-  } else {
-    const blob = document.getElementById('blob');
-    blob.animate({
-      left: `50%`,
-      top: `50%`
-    }, {duration: 4000, fill: "forwards"})
   }
 
   return (

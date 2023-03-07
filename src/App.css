@@ -33,7 +33,8 @@
 }
 
 .blob-small {
-    height: 225px !important;
+    height: 200px !important;
+    animation: rotate 5s infinite !important;
 }
 
 #blur, #blur-less {
