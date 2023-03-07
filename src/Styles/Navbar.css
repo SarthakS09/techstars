@@ -34,11 +34,12 @@ img {
 .glow-on-hover {
     margin-right: 100px;
     top: -24%;
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 45px;
     font-size: 1.15rem;
     text-decoration: none;
-    border: 1px #9B79F7 solid;
+    font-family: MatterBold;
+    border: 3px #9B79F7 solid;
     border-radius: 50px;
     color: #fff;
     background: #1D1D1F;
@@ -46,12 +47,13 @@ img {
     position: relative;
     z-index: 0;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     transition: 0.2s;
 }
 
 .glow-on-hover:hover {
     background-color: #F9D182;
+    border: 3px #FFFFFF solid;
 }
 
 @media only screen and (max-width: 767px) {
