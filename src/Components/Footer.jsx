@@ -10,9 +10,9 @@ export default function Footer() {
                 <img src={seeYou} className='see-you-img'/>
             </div>
             <div id='ftr-links' className='ftr-links'>
-                <a>instagram →</a>
-                <a>linkedin →</a>
-                <a>twitter →</a>
+                <a href='https://www.instagram.com/esummit_iiitd/' target='_blank'>instagram →</a>
+                <a href='https://www.linkedin.com/company/entrepreneurship-summit-iiit-delhi/' target='_blank'>linkedin →</a>
+                <a href='https://twitter.com/ecell_iiitd' target='_blank'>twitter →</a>
             </div>
         </div>
         <div className='attr'>

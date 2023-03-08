@@ -27,6 +27,10 @@
     
 }
 
+.ftr-links a {
+    text-decoration: none;
+}
+
 .see-you-img {
     width: 80%;
 }

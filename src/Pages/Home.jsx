@@ -19,7 +19,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <h2 id='events-start'>mind-blowing events 🤯</h2>
+      <h2 id='events-start'>mind-blowing events. 🤯</h2>
       <p className='center'>Sample text demonstrating how cool and diverse our events line-up is</p>
       <div className='events'>
           <div className='shark-tank-box'>
@@ -34,14 +34,14 @@ export default function Home() {
       </div>
 
       <div className='speakers-card'>
-          <h2>the best speakers 👌</h2>
+          <h2>the best speakers. 👌</h2>
           <p>Sample text demonstrating how cool and diverse our speaker line-up is</p>
           <h4>view all speakers →</h4>
           <img src={sampleSpeakers}/>
       </div>
 
       <div className='collaborations'>
-          <h2>industry collaborations 🤝</h2>
+          <h2>industry collaborations. 🤝</h2>
           <p className='center'>Sample text demonstrating how cool and diverse our sponsorship line-up is</p>
           <img src={sampleCollabs} className='sample-collabs'/>
       </div>
