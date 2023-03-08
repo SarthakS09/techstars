@@ -71,7 +71,8 @@ h4 {
     height: 350px;
     margin: 10px auto;
     border-radius: 30px;
-    transition: 0.2s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .viewEvents {
@@ -80,16 +81,26 @@ h4 {
     margin: 20px auto;
     border: 3px #FFFFFF solid;
     border-radius: 25px;
-    transition: 0.2s;
+    transition: 0.3s;
     text-align: center;
     line-height: 0%;
     background-color: #50A274;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 
-.shark-tank-box:hover, .productathon-box:hover, .viewEvents:hover {
-    background-color: #0E0E0E;
+.shark-tank-box:hover {
+    background: #b19763;
 }
+
+.productathon-box:hover {
+    background: #734fac;
+}
+
+.viewEvents:hover {
+    background: #0E0E0E;
+}
+
 
 .shark-tank-box {
     background-color: #F9D182;
@@ -128,6 +139,7 @@ h4 {
     line-height: 240%;
     text-align: center;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .speakers-card h4:hover {

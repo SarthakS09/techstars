@@ -25,6 +25,11 @@ img {
     width: 120px;
     top: -16%;
 }
+.hamburger-wrapper {
+    background-color: white;
+    border-radius: 100px;
+    padding: 0;
+}
 .left {
     align-items: center;
 }
@@ -40,7 +45,7 @@ img {
     font-size: 1.15rem;
     text-decoration: none;
     font-family: MatterBold;
-    border: 3px #9B79F7 solid;
+    border: 2px white solid;
     border-radius: 50px;
     color: #fff;
     background: #0E0E0E;
@@ -72,7 +77,6 @@ img {
         margin: 10px 20px;
         z-index: 2;
     }
-    
     img {
         width: 36px;
     }
@@ -83,4 +87,9 @@ img {
     .glow-on-hover {
         display: none;
     }
-  }
+    .hamburger-wrapper {
+        height: 38px;
+        width: 38px;
+        padding: -15px;
+    }
+}

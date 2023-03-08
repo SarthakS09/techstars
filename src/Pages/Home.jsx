@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       <div className='speakers-card'>
-          <h2>the best speakers. 👌</h2>
+          <h2>gold-standard speakers. 👌</h2>
           <p>Sample text demonstrating how cool and diverse our speaker line-up is</p>
           <h4>view all speakers →</h4>
           <img src={sampleSpeakers}/>

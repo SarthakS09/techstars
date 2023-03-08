@@ -25,8 +25,8 @@
     border-radius: 50%;
     background: linear-gradient(
         to bottom,
-        #F9D182,
-        mediumpurple
+        red,
+        blue
     );
     animation: rotate 15s infinite;
     z-index: -2;

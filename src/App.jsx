@@ -38,7 +38,7 @@ function App() {
     <>
       <div id="blob" className={isMobile ? "blob-small" : ""}></div>
       <div id={isMobile ? "blur-less" : "blur"}></div>
-      <Navbar/>
+      <Navbar isMobile={isMobile}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
