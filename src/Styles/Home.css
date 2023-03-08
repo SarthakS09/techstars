@@ -49,8 +49,9 @@ h4 {
 .scroller {
     position: absolute;
     top: 82vh;
+    cursor: pointer;
     width: 200px;
-    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: bounce 2000ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-delay: 500ms;
 }
 
