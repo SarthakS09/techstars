@@ -2,6 +2,10 @@
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 @keyframes rotate {
     from {
         rotate: 0deg;
@@ -25,15 +29,15 @@
     border-radius: 50%;
     background: linear-gradient(
         to bottom,
-        red,
-        blue
+        blue,
+        red
     );
     animation: rotate 15s infinite;
     z-index: -2;
 }
 
 .blob-small {
-    height: 200px !important;
+    height: 225px !important;
     animation: rotate 5s infinite !important;
 }
 
