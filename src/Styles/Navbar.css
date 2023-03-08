@@ -14,14 +14,18 @@ nav ul {
     list-style-type: none;
 }
 nav ul li {
-    color: #0E0E0E;
     font-family: Poppins;
     font-size: 3.2rem;
     text-align: right;
+    z-index: 3;
 }
 
-li.active {
-    color: #9A71DB;
+li span {
+    color: #0E0E0E;
+}
+
+span.active {
+    color: #9A71DB !important;
 }
 
 .nav {
@@ -87,7 +91,6 @@ li.active {
 
 .glow-on-hover:hover {
     background-color: #F9D182;
-    border: 3px #FFFFFF solid;
 }
 
 @media only screen and (max-width: 767px) {

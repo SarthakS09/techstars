@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import navLogo from '../Assets/logo-white.png';
 import esmtLogo from '../Assets/esmt.svg'
-import hamburger from '../Assets/Group-2.png'
 import { Twirl as Hamburger } from 'hamburger-react'
 import '../Styles/Navbar.css'
 
@@ -48,12 +47,34 @@ export default function Navbar({ isMobile }) {
       <nav className={sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : 'nav-bar animate__animated animate__slideOutDown animate__faster'}>
         <ul className='nav-menu-items'>
           <li className='active'>
-            Home
+            <Link to='/'>
+              <span>Home</span>
+            </Link>
           </li>
-          <li>Events</li>
-          <li>Speakers</li>
-          <li>Schedule</li>
-          <li>About Us</li>
+
+          <li>
+            <Link to='/'>
+              <span>Events</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link to='/'>
+              <span>Speakers</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link to='/'>
+              <span>Schedule</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link to='/'>
+              <span>About Us</span>
+            </Link>
+          </li>
         </ul>
       </nav>
 
