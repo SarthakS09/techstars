@@ -13,7 +13,7 @@
 .see-you {
     border-right: 1px white solid;
     width: 55%;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .ftr-links {
@@ -23,7 +23,7 @@
     flex-direction: column;
     padding: 0 5%;
     text-align: left;
-    max-width: 400px;
+    max-width: 500px;
     
 }
 
@@ -34,11 +34,16 @@
 .attr {
     background-color: #1D1D1F;
     font-family: 'MatterBold', sans-serif;
-    display: flex;
-    justify-content: space-between;
     padding: 10px 25px;
     font-size: 0.7rem;
     letter-spacing: 1px;
+}
+
+.attr-text {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    max-width: 1200px;
 }
 
 .attr p {
