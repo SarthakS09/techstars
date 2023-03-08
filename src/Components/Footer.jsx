@@ -18,7 +18,7 @@ export default function Footer() {
         <div className='attr'>
             <div className="attr-text">
             <p className='left'>ESUMMIT'23 - IIIT DELHI'S FLAGSHIP ENTREPRENEURIAL SUMMIT</p>
-            <p className='right'>DESIGNED AND DEVELOPED BY ADITYA GIRDHAR</p>
+            <p className='right'>DEVELOPED BY ADITYA GIRDHAR</p>
             </div>
         </div>
     </>

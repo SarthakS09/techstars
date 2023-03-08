@@ -1,3 +1,10 @@
+.center {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+
+}
+
 h1, h2, h3, h4, h5 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -51,9 +58,8 @@ h4 {
 
 .shark-tank-box, .productathon-box {
     width: 47%;
-    height: 250px;
+    height: 350px;
     margin: 10px auto;
-    border: 4px #FFFFFF solid;
     border-radius: 30px;
     transition: 0.2s;
 }
@@ -62,8 +68,8 @@ h4 {
     width: 250px;
     height: 50px;
     margin: 20px auto;
-    border: 4px #FFFFFF solid;
-    border-radius: 20px;
+    border: 3px #FFFFFF solid;
+    border-radius: 25px;
     transition: 0.2s;
     text-align: center;
     line-height: 0%;
@@ -72,7 +78,7 @@ h4 {
 }
 
 .shark-tank-box:hover, .productathon-box:hover, .viewEvents:hover {
-    background-color: #1D1D1F;
+    background-color: #0E0E0E;
 }
 
 .shark-tank-box {
@@ -87,11 +93,12 @@ h4 {
 
 .speakers-card {
     width: 75%;
+    max-width: 1050px;
     margin: 50px auto;
     background: #000000;
     border-radius: 30px;
     padding: 20px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
     padding-bottom: 0;
     text-align: center;
 }
@@ -114,12 +121,20 @@ h4 {
 }
 
 .speakers-card h4:hover {
-    background: #1D1D1F;
+    background: #0E0E0E;
 }
 
 .speakers-card img {
     width: 98%;
     margin-top: 20px;
+}
+
+.sample-collabs {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 120px;
 }
 
 @media only screen and (max-width: 767px) {
