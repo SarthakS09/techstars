@@ -37,12 +37,21 @@ h4 {
 }
 
 .landing {
-    height: calc(80vh);
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.scroller {
+    position: absolute;
+    top: 82vh;
+    width: 200px;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: 500ms;
 }
 
 /* Events section */
@@ -143,6 +152,14 @@ h4 {
     }
     h2 {
         font-size: 1.5rem;
+    }
+    .landing {
+        height: 65vh;
+    }
+
+    .scroller {
+        top: 75vh;
+        width: 140px;
     }
     .events {
         flex-direction: column;

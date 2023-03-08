@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import scrollDown from '../Assets/scroll-down.svg'
+import scrollDown from '../Assets/scroll.svg'
 import sampleSpeakers from '../Assets/sample-speakers.png'
 import sampleCollabs from '../Assets/sample-collabs.png'
 import '../Styles/Home.css'
@@ -13,6 +13,7 @@ export default function Home() {
         <h1 className='t1 animate__animated animate__bounceInRight'>🚀 your biggest </h1>
         <h1 className='t2 animate__animated animate__bounceInLeft'>networking 👨🏻‍💻</h1>
         <h1 className='t3 animate__animated animate__bounceInRight'>💸 opportunity.</h1>
+        <img src={scrollDown} className='animate__animated animate__bounceInUp scroller'/>
       </div>
 
       <h2>mind-blowing events 🤯</h2>

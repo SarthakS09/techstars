@@ -1,9 +1,10 @@
-import Navbar from "./Components/Navbar";
 import { useState, useEffect } from 'react';
-import './App.css'
+import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 import { Route, Routes } from "react-router-dom";
+import './App.css'
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
       <Footer/>
     </>
