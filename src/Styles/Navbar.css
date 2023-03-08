@@ -10,7 +10,7 @@ nav {
     justify-content: right;
 }
 nav ul {
-    margin: 200px 45px;
+    margin: 200px 50px;
     list-style-type: none;
 }
 nav ul li {
@@ -24,8 +24,8 @@ li span {
     color: #0E0E0E;
 }
 
-span.active {
-    color: #9A71DB !important;
+li.active span {
+    color: #9A71DB;
 }
 
 .nav {
@@ -53,7 +53,7 @@ span.active {
 .esmt-logo {
     position: relative;
     width: 120px !important;
-    top: -1%;
+    top: -10%;
 }
 .hamburger-wrapper {
     height: 48px;

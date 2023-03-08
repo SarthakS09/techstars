@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
+import Events from "./Pages/Events"
+import Speakers from "./Pages/Speakers"
+import Schedule from "./Pages/Schedule"
 import About from "./Pages/About";
 import { Route, Routes } from "react-router-dom";
 import './App.css'
@@ -41,6 +44,9 @@ function App() {
       <Navbar isMobile={isMobile}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/events" element={<Events/>}/>
+        <Route path="/speakers" element={<Speakers/>}/>
+        <Route path="/schedule" element={<Schedule/>}/>
         <Route path="/about" element={<About/>}/>
       </Routes>
       <Footer/>

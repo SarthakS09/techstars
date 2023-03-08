@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className='t2 animate__animated animate__bounceInLeft'>networking 👨🏻‍💻</h1>
         <h1 className='t3 animate__animated animate__bounceInRight'>💸 opportunity.</h1>
         <Link style={{ width: "100%", display: 'flex', justifyContent: 'center' }} to="events-start" smooth={true} offset={-75} duration={1500}>
-        <img src={scrollDown} className='animate__animated animate__bounceInUp scroller'/>
+          <img src={scrollDown} className='animate__animated animate__bounceInUp scroller'/>
         </Link>
       </div>
 

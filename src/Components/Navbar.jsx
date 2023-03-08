@@ -17,9 +17,12 @@ export default function Navbar({ isMobile }) {
     //     return () => window.removeEventListener('scroll', onScroll);
     // }, []);
     // // console.log(offset);
-
+    const [x, setX] = useState(0);
     const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+    const showSidebar = () => {
+      setX(x+1);
+      setSidebar(!sidebar);
+    }
 
     return (
       <>
@@ -29,7 +32,7 @@ export default function Navbar({ isMobile }) {
           </div>
           <div className='right'>
             <div className='hamburger-wrapper'>
-              <Hamburger className='hb' size={isMobile ? 18 : 24} color='black' onToggle={showSidebar}/>
+              <Hamburger toggled={sidebar} className='hb' size={isMobile ? 18 : 24} color='black' onToggle={showSidebar}/>
             </div>
           </div>
       </div>
@@ -44,34 +47,34 @@ export default function Navbar({ isMobile }) {
         </div>
       </div>
 
-      <nav className={sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : 'nav-bar animate__animated animate__slideOutDown animate__faster'}>
+      <nav className={(sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : (x==0 ? 'hidden' : 'nav-bar animate__animated animate__slideOutDown animate__faster'))}>
         <ul className='nav-menu-items'>
           <li className='active'>
-            <Link to='/'>
+            <Link to='/' onClick={showSidebar}>
               <span>Home</span>
             </Link>
           </li>
 
           <li>
-            <Link to='/'>
+            <Link to='/events' onClick={showSidebar}>
               <span>Events</span>
             </Link>
           </li>
 
           <li>
-            <Link to='/'>
+            <Link to='/speakers' onClick={showSidebar}>
               <span>Speakers</span>
             </Link>
           </li>
 
           <li>
-            <Link to='/'>
+            <Link to='/schedule' onClick={showSidebar}>
               <span>Schedule</span>
             </Link>
           </li>
 
           <li>
-            <Link to='/'>
+            <Link to='/about' onClick={showSidebar}>
               <span>About Us</span>
             </Link>
           </li>
