@@ -1,4 +1,8 @@
-* {
+body {
+    color: white;
+}
+
+a {
     color: white;
 }
 
@@ -18,6 +22,24 @@
     }
 }
 
+h1 {
+    font-size: 5rem;
+    line-height: 1px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
 #blob {
     background-color: white;
     height: 500px;
@@ -32,24 +54,42 @@
         blue,
         red
     );
-    animation: rotate 15s infinite;
+    animation: rotate 10s infinite;
     z-index: -2;
 }
 
-.blob-small {
-    height: 225px !important;
-    animation: rotate 5s infinite !important;
-}
-
-#blur, #blur-less {
+#blur {
     top: 0;
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: -1;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(150px);
 }
 
-#blur-less {
-    backdrop-filter: blur(120px);
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.8rem;
+        max-width: 80%;
+        margin: auto;
+    }
+    #blur {
+        backdrop-filter: blur(100px);
+    }
+    #blob {
+        height: 275px;
+        animation: rotate 5s infinite;
+    }
 }

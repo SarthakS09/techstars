@@ -7,7 +7,7 @@ import { Twirl as Hamburger } from 'hamburger-react'
 import '../Styles/Navbar.css'
 
 
-export default function Navbar({ isMobile }) {
+export default function Navbar() {
   
   // const [offset, setOffset] = useState(0);
   // useEffect(() => {
@@ -32,7 +32,7 @@ export default function Navbar({ isMobile }) {
           </div>
           <div className='right'>
             <div className='hamburger-wrapper'>
-              <Hamburger toggled={sidebar} className='hb' size={isMobile ? 18 : 24} color='black' onToggle={showSidebar}/>
+              <Hamburger toggled={sidebar} className='hb' size={22} color='black' onToggle={showSidebar}/>
             </div>
           </div>
       </div>

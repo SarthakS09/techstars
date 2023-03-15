@@ -75,7 +75,8 @@ li.active span {
     height: 45px;
     font-size: 1.15rem;
     text-decoration: none;
-    font-family: MatterBold;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
     border: 2px white solid;
     border-radius: 50px;
     color: #fff;
@@ -90,7 +91,8 @@ li.active span {
 }
 
 .glow-on-hover:hover {
-    background-color: #F9D182;
+    background-color: #FFFFFF;
+    color: #0E0E0E;
 }
 
 @media only screen and (max-width: 767px) {

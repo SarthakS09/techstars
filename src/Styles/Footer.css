@@ -17,8 +17,10 @@
 }
 
 .ftr-links {
-    font-family: 'Matter', sans-serif;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
     font-size: 2rem;
+    line-height: 140%;
     display: flex;
     flex-direction: column;
     padding: 0 5%;
@@ -36,7 +38,8 @@
 
 .attr {
     background-color: #0E0E0E;
-    font-family: 'MatterBold', sans-serif;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
     padding: 10px 0px;
     font-size: 0.7rem;
     letter-spacing: 1px;
@@ -44,9 +47,9 @@
 
 .attr-text {
     display: flex;
-    margin: auto;
     justify-content: space-around;
     max-width: 1200px;
+    margin: auto;
 }
 
 .attr p {
@@ -56,22 +59,24 @@
 @media only screen and (max-width: 767px) {
     .ftr-section {
         height: 25vw;
-        padding-left: 0;
-        padding-right: 0;
+    }
+    .attr {
+        padding: 10px 0px;
     }
     .attr-text {
-        padding-left: 5px;
-        padding-right: 5px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        font-size: 0.55rem;
     }
     .attr p {
         font-size: 0.55rem;
     }
+    .left {
+        width: 100%;
+        padding: 0px 10px;
+    }
     .left, .right {
-        margin: 4px;
+        margin: 4px 0px;
     }
     .ftr-links {
         font-size: 1rem;

@@ -1,24 +1,9 @@
-@font-face {
-  font-family: "Matter";
-  src: url("Assets/Fonts/Matter/Matter-Regular.otf")
-}
-@font-face {
-  font-family: "MatterLight";
-  src: url("Assets/Fonts/Matter/Matter-Light.otf")
-}
-@font-face {
-  font-family: "MatterMedium";
-  src: url("Assets/Fonts/Matter/Matter-Medium.otf")
-}
-@font-face {
-  font-family: "MatterBold";
-  src: url("Assets/Fonts/Matter/Matter-Bold.otf")
-}
 body {
   margin: 0;
-  font-family: 'MatterMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0E0E0E;
