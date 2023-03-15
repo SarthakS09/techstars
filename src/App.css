@@ -64,7 +64,7 @@ h4 {
     width: 100%;
     position: fixed;
     z-index: -1;
-    backdrop-filter: blur(150px);
+    backdrop-filter: blur(120px);
 }
 
 @media only screen and (max-width: 767px) {
