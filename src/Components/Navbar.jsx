@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import navLogo from '../Assets/logo-white.png';
 import esmtLogo from '../Assets/esmt.svg'
@@ -49,34 +49,39 @@ export default function Navbar() {
 
       <nav className={(sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : (x==0 ? 'hidden' : 'nav-bar animate__animated animate__slideOutDown animate__faster'))}>
         <ul className='nav-menu-items'>
-          <li className='active'>
-            <Link to='/' onClick={showSidebar}>
+          <li>
+            <NavLink to='/' onClick={showSidebar}>
               <span>Home</span>
-            </Link>
+            </NavLink>
           </li>
 
-          <li>
-            <Link to='/events' onClick={showSidebar}>
+          {/* <li>
+            <NavLink to='/events' onClick={showSidebar}>
               <span>Events</span>
-            </Link>
-          </li>
+            </NavLink>
+          </li> */}
 
-          <li>
-            <Link to='/speakers' onClick={showSidebar}>
+          {/* <li>
+            <NavLink to='/speakers' onClick={showSidebar}>
               <span>Speakers</span>
-            </Link>
-          </li>
+            </NavLink>
+          </li> */}
 
           <li>
-            <Link to='/schedule' onClick={showSidebar}>
+            <NavLink to='/schedule' onClick={showSidebar}>
               <span>Schedule</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link to='/about' onClick={showSidebar}>
-              <span>About Us</span>
-            </Link>
+            <NavLink to='/about' onClick={showSidebar}>
+              <span>The Team</span>
+            </NavLink>
+          </li>
+
+          <li>
+            {/* <span className="nav-attr">IIIT Delhi's Esummit'23.</span> */}
+            <span className="nav-attr">emerge. evolve. exceed.</span>
           </li>
         </ul>
       </nav>
