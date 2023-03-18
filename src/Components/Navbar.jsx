@@ -28,7 +28,7 @@ export default function Navbar() {
       <>
       <div className='nav-fixed'>
           <div className='left'>
-            <img src={navLogo}/>
+            <img src={navLogo} className='esmt-icon'/>
           </div>
           <div className='right'>
             <div className='hamburger-wrapper'>

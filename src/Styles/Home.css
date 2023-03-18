@@ -41,13 +41,21 @@ h1, h2, h3, h4, h5 {
 .scroller {
     position: absolute;
     top: 82vh;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 200px;
     animation: bounce 2000ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-delay: 1s;
 }
 
 /* Events section */
+
+.spline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    height: 500px;
+}
 
 .incubation { background: #0597BE; }
 .ecell-meet { background: #F04F3D; }
@@ -66,6 +74,7 @@ h1, h2, h3, h4, h5 {
 .two-events a {
     width: 100%;
     text-decoration: none;
+    cursor: url('../Assets/money-custom-cursor.png'), auto;
 }
 .banner .card-large { width: 75% !important; margin: auto; background: #0E0E0E;}
 
@@ -93,7 +102,7 @@ svg {
     height: 20px;
     width: 100px;
     transition: 250ms all ease;
-    cursor: pointer;
+    /* cursor: pointer; */
     align-items: center;
 }
 svg path {
@@ -191,7 +200,7 @@ svg path {
     line-height: 240%;
     text-align: center;
     transition: 0.1s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .speakers-card h3:hover {

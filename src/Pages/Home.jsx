@@ -10,15 +10,19 @@ import scrollDown from '../Assets/scroll.svg'
 import sampleSpeakers from '../Assets/sample-speakers.png'
 import sampleCollabs from '../Assets/sample-collabs.png'
 import AOS from 'aos';
+import Spline from '@splinetool/react-spline';
 import 'aos/dist/aos.css';
 import '../Styles/Home.css'
 
-export default function Home({ isMobile }) {
+export default function Home() {
   useEffect(() => {
     AOS.init();
   }, [])
   return (
   <>
+    {/* <div className="spline">
+    <Spline scene="https://prod.spline.design/vhZtkdWG2LvATHy7/scene.splinecode" />
+    </div> */}
     <div className="landing">
       <img className='animate__animated animate__fadeInUp t1' src={biggest}/>
       <img className='animate__animated animate__fadeInUp t2' src={networking}/>
@@ -70,18 +74,17 @@ export default function Home({ isMobile }) {
             <p>Get ready to teleport yourself to the hustle of the Bombay Stock Exchange of 1990s and experience the thrill of purchasing physical stocks and analyzing them to form the best portfolio in the market. We'll have news floating around the room, broker floating tips, and hustle to purchase the best stocks in the market. Are you up for the challenge?</p>
           </div>
 
-          <div className="card-large number-painting" data-aos="fade-up">
+          {/* <div className="card-large number-painting" data-aos="fade-up">
             <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1674C/production/_106308919_paint_by_numbers2_getty.jpg" alt="number-painting" />
             <h3>Number Painting</h3>
             <p>Roll up your sleeves and prepare to make this Changemakers Installation colorful. We present to you an enjoyable and interactive experience of number painting. Join us with your friends to discuss the prevailing social issues and paint your way through these Changemakers' lives.</p>
+          </div> */}
+
+          <div className="card-large social-impact" data-aos="fade-up">
+            <img src="https://home.iitd.ac.in/public/storage/uploads/TIH%20MoU%202_1637147554.jpg" alt="social impact meet" />
+            <h3>Social Impact Meet</h3>
+            <p>All hail Reformers! Book your calendars and join the movement of Change. We present name of event, an opportunity to interact and learn with fellow pacesetters. We intend to discuss themes like xyz, uvw….and hope to connect over the challenges and aspects we face as changemakers.</p>
           </div>
-      </div>
-      <div className='two-events'>
-        <div className="card-large social-impact" data-aos="fade-up">
-          <img src="https://home.iitd.ac.in/public/storage/uploads/TIH%20MoU%202_1637147554.jpg" alt="social impact meet" />
-          <h3>Social Impact Meet</h3>
-          <p>All hail Reformers! Book your calendars and join the movement of Change. We present name of event, an opportunity to interact and learn with fellow pacesetters. We intend to discuss themes like xyz, uvw….and hope to connect over the challenges and aspects we face as changemakers.</p>
-        </div>
       </div>
     </div>
 

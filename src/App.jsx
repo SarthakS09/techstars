@@ -13,20 +13,22 @@ import './App.css'
 function App() {
 
   // getting window width
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    window.addEventListener('resize', ()=>{
-      setWidth(window.innerWidth);
-    });
-    return () => {
-        window.removeEventListener('resize', ()=>{
-          setWidth(window.innerWidth);
-        });
-    }
-  }, []);
+
+  // const [width, setWidth] = useState(window.innerWidth);
+  // useEffect(() => {
+  //   window.addEventListener('resize', ()=>{
+  //     setWidth(window.innerWidth);
+  //   });
+  //   return () => {
+  //       window.removeEventListener('resize', ()=>{
+  //         setWidth(window.innerWidth);
+  //       });
+  //   }
+  // }, []);
   
   // checking if display is mobile
-  const isMobile = width <= 768;
+
+  // const isMobile = width <= 768;
   // if (!isMobile) {
   //   document.body.onpointermove = event => {
   //     const blob = document.getElementById('blob');
@@ -44,7 +46,7 @@ function App() {
       <div id="blur"></div>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home isMobile={isMobile}/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Events/>}/>
         <Route path="/speakers" element={<Speakers/>}/>
         <Route path="/schedule" element={<Schedule/>}/>

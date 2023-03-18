@@ -43,8 +43,9 @@ li.active span {
     width: calc(100vw - 60px);
     justify-content: space-between;
     background-color: transparent;
-    margin: 15px 30px;
+    padding: 15px 30px;
     z-index: 2;
+    border: 1px red;
 }
 
 .left img {
@@ -103,24 +104,21 @@ li.active span {
     }
     
     .nav-fixed {
-        width: calc(100vw - 30px);
         justify-content: space-between;
         background-color: transparent;
-        margin: 5px 15px;
         z-index: 2;
     }
     nav ul li {
         font-size: 2rem;
     }
     .left img {
-        height: 42px;
+        height: 48px;
         width: auto;
     }
     .esmt-logo {
         width: 120px !important;
-        top: -25%;
+        top: -5%;
         left: 5%;
-        
     }
     .glow-on-hover {
         display: none;
@@ -128,5 +126,9 @@ li.active span {
     .hamburger-wrapper {
         height: 48px;
         width: 48px;
+    }
+    .esmt-icon {
+        width: 50px;
+        margin-left: -8px;
     }
 }
