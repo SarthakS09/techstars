@@ -42,8 +42,6 @@ function App() {
 
   return (
     <>
-      <div id="blob"></div>
-      <div id="blur"></div>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>

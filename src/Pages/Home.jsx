@@ -23,6 +23,8 @@ export default function Home() {
     {/* <div className="spline">
     <Spline scene="https://prod.spline.design/vhZtkdWG2LvATHy7/scene.splinecode" />
     </div> */}
+    <div id="blob"></div>
+    <div id="blur"></div>
     <div className="landing">
       <img className='animate__animated animate__fadeInUp t1' src={biggest}/>
       <img className='animate__animated animate__fadeInUp t2' src={networking}/>
