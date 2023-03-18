@@ -43,25 +43,31 @@ section.green {
 }
 
 .cards-section {
+    width: 95%;
     max-width: 1100px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    display: inline-block;
-    border-radius: 25px;
+    display: flex;
+    border-radius: 20px;
     background: white;
     width: 300px;
     color: black;
     margin: 0px 20px;
     margin-bottom: 40px;
+    height: 550px;
 }
 
 .card img {
     margin-top: 40px;
     width: 225px;
     aspect-ratio: 1;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .card h4 {
@@ -75,11 +81,14 @@ section.green {
 
 .card .designation {
     font-weight: 500;
-    margin-bottom: 15px;
 }
 
-.card .designation {
-    
+.card .description {
+    margin: auto;
+    padding: 20px 0px;
+    width: 75%;
+    font-weight: 500;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 768px) {
@@ -92,6 +101,25 @@ section.green {
     }
     .about-header p {
         margin-top: -10px;
+        font-size: 0.8rem;
+    }
+    .card {
+        border-radius: 20px;
+        background: white;
+        width: 47%;
+        color: black;
+        margin: 0px 5px;
+        margin-bottom: 15px;
+        height: 100%;
+    }
+    .card img {
+        margin-top: 20px;
+        width: 150px;
+        aspect-ratio: 1;
+        border-radius: 15px;
+    }
+    .card .description {
+        width: 80%;
         font-size: 0.8rem;
     }
 }

@@ -5,10 +5,12 @@ import '../Styles/About.css'
 function renderCard(image, name, designation, description) {
   return(
       <div className="card">
+        <div>
         <img src={image} alt="" />
         <h4 className='name'>{name}</h4>
-        <h4 className='designation'>{designation}</h4>
+        <h4 className='designation flexible'>{designation}</h4>
         <h4 className='description'>{description}</h4>
+        </div>
       </div>
   )
 }
@@ -24,6 +26,12 @@ export default function About() {
       <section className="yellow">
         <h2>convenors and mentors</h2>
         <div className="cards-section">
+
+          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+            '“A line that describes fdjsf fdsjf dsfdjsf dsfd sfds  gf gd h dfh hdggfd briefly, written by them”')}
+
+          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+            '“A line that describes them briefly, written by them”')}
 
           {renderCard(girdhar, 'Firstname lastname', 'Designation',
             '“A line that describes them briefly, written by them”')}
