@@ -29,7 +29,7 @@ export default function Schedule() {
     <>
       <div className="about-header sched-header">
         <h2>here's the plan.</h2>
-        <p className='sched-p'>We recommend planning your day in advance to make the most out of all the exciting things we have in store for you.</p>
+        <p className='sched-p'>We recommend planning your day in advance to make the most of all the exciting things we have in store for you.</p>
       </div>
       <div className="sched-container">
         <div className="buildings" data-aos="fade-up">
