@@ -8,6 +8,8 @@ import Schedule from "./Pages/Schedule"
 import About from "./Pages/About";
 import PageNotFound from './Pages/PageNotFound';
 import { Route, Routes } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css'
 
 function App() {
@@ -39,7 +41,9 @@ function App() {
   //     }, {duration: 4000, fill: "forwards"})
   //   }
   // }
-
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Navbar/>

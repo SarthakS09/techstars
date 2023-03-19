@@ -4,7 +4,7 @@ import '../Styles/About.css'
 
 function renderCard(image, name, designation, description) {
   return(
-      <div className="card">
+      <div className="card" data-aos="fade-up">
         <div>
         <img src={image} alt="" />
         <h4 className='name'>{name}</h4>
