@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
 
         <div className='right'>
-          <a className='glow-on-hover' href="#">Schedule</a>
+          <Link to='/schedule' className='glow-on-hover'>Schedule</Link>
         </div>
       </div>
 

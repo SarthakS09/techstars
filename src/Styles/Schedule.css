@@ -1,0 +1,98 @@
+.sched-header p.sched-p {
+    margin-top: -10px;
+    max-width: 650px;
+    line-height: 140%;
+}
+
+.sched-container {
+    width: 95%;
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.buildings {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span.line {
+    padding: 0;
+    background: white;
+    width: 2px;
+    height: 45px;
+}
+
+.time-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+p.sched-time {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.time-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.time-card-lhc { background: #9A71DB; }
+
+.time-card-rnd { background: #50A274; }
+
+.time-card-break {
+    background: white;
+    color: black;
+}
+
+.time-card-empty, .time-card-rnd, .time-card-lhc, .time-card-break {
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 42%;
+    margin: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-card-break {
+    width: 90%;
+}
+
+.time-card-empty h4, .time-card-rnd h4, .time-card-lhc h4, .time-card-break h4 {
+    font-size: 1.4rem;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    p.sched-time {
+        font-size: 1rem;
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+    .time-card-empty, .time-card-rnd, .time-card-lhc, .time-card-break {
+        border: 1.5px solid white;
+        border-radius: 12px;
+        width: 45%;
+        margin: 5px 6px;
+    }
+    .time-card-break {
+        width: 93%;
+    }
+    .time-section {
+        margin-bottom: 15px;
+    }
+    .time-card-empty h4, .time-card-rnd h4, .time-card-lhc h4, .time-card-break h4 {
+        font-size: 1rem;
+        padding: 0px 5px;
+        margin: 15px 0px;
+    }
+}
