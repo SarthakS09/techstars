@@ -47,6 +47,8 @@ p.sched-time {
 
 .time-card-rnd { background: #50A274; }
 
+.time-card-empty { background: #282828; }
+
 .time-card-break {
     background: white;
     color: black;
