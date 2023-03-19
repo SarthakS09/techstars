@@ -39,7 +39,7 @@ export default function Home() {
 
     <div className='eventsSection'>
       <h2 id='events-start' className='center' data-aos="fade-up">mind-blowing events. 🤯</h2>
-      <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inuducing events, but we'd like to give you a taste of what's to come before we steal the show.</p>
+      <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inducing events, but we'd like to give you a taste of what's to come before we steal the show.</p>
       <p className='center' data-aos="fade-up"><strong>Registrations are open for our offical pre-event</strong>, so what are you waiting for? Register now!</p>
       <div className="two-events banner">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVjZcApKfejIsxoGEc4MJPiuBkLW910rYK0F3gH88e644o8A/viewform">
