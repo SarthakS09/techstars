@@ -73,11 +73,11 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          <li>
+          {/* <li>
             <NavLink to='/about' onClick={showSidebar}>
               <span>The Team</span>
             </NavLink>
-          </li>
+          </li> */}
 
           <li>
             {/* <span className="nav-attr">IIIT Delhi's Esummit'23.</span> */}

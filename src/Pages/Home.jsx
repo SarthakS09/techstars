@@ -76,11 +76,11 @@ export default function Home() {
             <p>Get ready to teleport yourself to the hustle of the Bombay Stock Exchange of 1990s and experience the thrill of purchasing physical stocks and analyzing them to form the best portfolio in the market. We'll have news floating around the room, broker floating tips, and hustle to purchase the best stocks in the market. Are you up for the challenge?</p>
           </div>
 
-          {/* <div className="card-large number-painting" data-aos="fade-up">
+          <div className="card-large number-painting" data-aos="fade-up">
             <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1674C/production/_106308919_paint_by_numbers2_getty.jpg" alt="number-painting" />
             <h3>Number Painting</h3>
             <p>Roll up your sleeves and prepare to make this Changemakers Installation colorful. We present to you an enjoyable and interactive experience of number painting. Join us with your friends to discuss the prevailing social issues and paint your way through these Changemakers' lives.</p>
-          </div> */}
+          </div>
 
           <div className="card-large social-impact" data-aos="fade-up">
             <img src="https://home.iitd.ac.in/public/storage/uploads/TIH%20MoU%202_1637147554.jpg" alt="social impact meet" />
@@ -90,16 +90,16 @@ export default function Home() {
       </div>
     </div>
 
-    <div className='speakers-card' data-aos="fade-up">
+    {/* <div className='speakers-card' data-aos="fade-up">
         <h2>gold-standard speakers. 👌</h2>
         <p>Sample text demonstrating how cool and diverse our speaker line-up is</p>
         <h4>view all speakers →</h4>
         <img src={sampleSpeakers}/>
-    </div>
+    </div> */}
 
     <div className='collaborations'>
         <h2>industry collaborations. 🤝</h2>
-        <p className='center'>Sample text demonstrating how cool and diverse our sponsorship line-up is</p>
+        <p className='center'>We're backed by organisations that take pride in the entrepreneurship culture and bold spirit of IIIT-Delhi and beyond. </p>
         <img src={sampleCollabs} className='sample-collabs'/>
     </div>
   </>
