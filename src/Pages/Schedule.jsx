@@ -39,11 +39,11 @@ export default function Schedule() {
         </div>
         {renderBlock('12:30pm - 1:30pm', 'registrations')}
         {renderBlock('1:30pm - 2:30pm', 'enlightening session')}
-        {renderBlock('2:30pm - 3:15pm', 'Scam 2023 - round 1', 'Change Utsav: movie showcase/nukad natak')}
+        {renderBlock('2:30pm - 3:15pm', 'Scam 2023: Round 1', 'Change Utsav: movie showcase/nukad natak')}
 
         {renderBreak('3:15pm - 3:45pm', 'snacks and networking')}
 
-        {renderBlock('3:45pm - 5:15pm', 'Scam 2023 - round 2', 'Change Utsav')}
+        {renderBlock('3:45pm - 5:15pm', 'Scam 2023: Round 2', 'Change Utsav')}
         {renderBlock('5:15pm - 5:45pm', 'keynote session 1', 'Change Utsav')}
         {renderBlock('5:45pm - 6:15pm', 'keynote session 2')}
         {renderBlock('6:15pm - 7:15pm', 'confluence', 'empathy board & number painting')}
