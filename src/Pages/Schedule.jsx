@@ -45,8 +45,8 @@ export default function Schedule() {
 
         {renderBlock('3:45pm - 5:15pm', 'Scam 2023 - round 2', 'Change Utsav')}
         {renderBlock('5:15pm - 5:45pm', 'keynote session 1', 'Change Utsav')}
-        {renderBlock('5:15pm - 5:45pm', 'keynote session 2')}
-        {renderBlock('5:15pm - 5:45pm', 'confluence', 'empathy board & number painting')}
+        {renderBlock('5:45pm - 6:15pm', 'keynote session 2')}
+        {renderBlock('6:15pm - 7:15pm', 'confluence', 'empathy board & number painting')}
 
         {renderBreak('7:15pm - 8:00pm', 'meal and open networking')}
         
