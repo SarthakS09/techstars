@@ -1,11 +1,11 @@
 body {
     color: white;
-    cursor: url('./Assets/money-custom-cursor.png'), auto;
+    /* cursor: url('./Assets/money-custom-cursor.png'), auto; */
 }
 
 a {
     color: white;
-    cursor: url('./Assets/money-custom-cursor.png'), auto;
+    /* cursor: url('./Assets/money-custom-cursor.png'), auto; */
 }
 
 .hidden {
