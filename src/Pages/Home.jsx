@@ -43,7 +43,7 @@ export default function Home() {
       <h1 className='t2 animate__animated animate__bounceInLeft'>networking 👨🏻‍💻</h1>
       <h1 className='t3 animate__animated animate__bounceInRight'>💸 opportunity.</h1> */}
       <div>
-      <h3 className='center date'>APRIL 23<sup>rd</sup> & 24<sup>th</sup>, 2023</h3>
+      <h3 className='center date'>APRIL 22<sup>nd</sup> & 23<sup>rd</sup>, 2023</h3>
       <Link style={{ width: "100%", display: 'flex', justifyContent: 'center' }} to="events-start" smooth={true} offset={-200} duration={1500}>
         <img src={scrollDown} className='animate__animated animate__bounceInUp animate__delay-2s scroller'/>
       </Link>
