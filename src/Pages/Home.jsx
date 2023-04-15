@@ -1,4 +1,5 @@
 import React from 'react'
+import Register from '../Components/Register'
 import { useEffect } from 'react'
 import { Link } from 'react-scroll'
 import Navbar from '../Components/Navbar'
@@ -123,11 +124,14 @@ export default function Home() {
         <img src={sampleSpeakers}/>
     </div> */}
 
+    <Register/>
+
     <div className='collaborations'>
         <h2>industry collaborations. 🤝</h2>
         <p className='center'>We're backed by organisations that take pride in the entrepreneurship culture and bold spirit of IIIT-Delhi and beyond. </p>
         <img src={sampleCollabs} className='sample-collabs'/>
     </div>
+
   </>
   )
 }
