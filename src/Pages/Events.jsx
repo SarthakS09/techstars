@@ -12,7 +12,7 @@ export default function Events() {
     <>
       <div className="container">
         <h2 data-aos="fade-up">events that you'll never forget.</h2>
-        <p className='center' data-aos="fade-up">events description</p>
+        <p className='center' data-aos="fade-up">We have planned incredibly fun events where you can get your hands dirty, and play the serial entrepreneur you've always wanted to be.</p>
 
         <a href="https://forms.gle/TASM4aCHxcdSSE5RA">
           <img src={zeroToOne} alt="Zero to One" className="event-banner" />

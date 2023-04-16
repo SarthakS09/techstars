@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
 import triggeredInsaan from '../Assets/triggered-insaan.png'
+import saptarshi from '../Assets/saptarshi.png'
+import anshMehra from '../Assets/ansh-mehra.png'
 
 export default function Speakers() {
   useEffect(() => {
@@ -14,12 +16,13 @@ export default function Speakers() {
         <a href="https://forms.gle/8YTCMbWMgYoaDRT2A">
           <img src={triggeredInsaan} alt="Startup Fair" className="event-banner"/>
         </a>
-        <a href="https://forms.gle/8YTCMbWMgYoaDRT2A">
-          <img src={triggeredInsaan} alt="Startup Fair" className="event-banner"/>
-        </a>
-        <a href="https://forms.gle/8YTCMbWMgYoaDRT2A">
-          <img src={triggeredInsaan} alt="Startup Fair" className="event-banner"/>
-        </a>
+        <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7">
+        <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner"/>
+      </a>
+
+      <a href="https://forms.gle/ymQvC4XFwcTjTQCRA">
+        <img src={anshMehra} alt="Ansh Mehra" className="event-banner"/>
+      </a>
       </div>
     </>
   )

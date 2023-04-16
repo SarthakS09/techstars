@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
 
         <div className='right'>
-          <Link to='/schedule' className='glow-on-hover'>Schedule</Link>
+          <Link to='https://forms.gle/qKoRhxmMKkL4XvES6' className='glow-on-hover'>Register Now</Link>
         </div>
       </div>
 
@@ -70,6 +70,12 @@ export default function Navbar() {
           <li>
             <NavLink to='/schedule' onClick={showSidebar}>
               <span>Schedule</span>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to='https://forms.gle/qKoRhxmMKkL4XvES6'>
+              <span>Register</span>
             </NavLink>
           </li>
 

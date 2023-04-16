@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom: 192px;
+    padding-bottom: 200px;
     margin-bottom: 140px;
     background-image: linear-gradient(rgba(14, 14, 14, 0), rgb(21, 21, 21));  
 }

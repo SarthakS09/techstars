@@ -10,6 +10,8 @@ import biggest from '../Assets/your-biggest.svg'
 import networking from '../Assets/networking.svg'
 import opportunity from '../Assets/opportunity.svg'
 import triggeredInsaan from '../Assets/triggered-insaan.png'
+import saptarshi from '../Assets/saptarshi.png'
+import anshMehra from '../Assets/ansh-mehra.png'
 import scrollDown from '../Assets/scroll.svg'
 import zeroToOne from '../Assets/zero-to-one.png'
 import pitchCafe from '../Assets/pitch-cafe.png'
@@ -56,8 +58,17 @@ export default function Home() {
     <div className="speakers">
       <h2 id='speakers-start' className='center' data-aos="fade-up">gold-standard speakers.</h2>
       <p className='center' data-aos="fade-up">Don't miss the chance to listen to some of the most influential people in this country speak about business, technology and life. <strong>Register now!</strong></p>
+      
       <a href="https://forms.gle/8YTCMbWMgYoaDRT2A">
         <img src={triggeredInsaan} alt="Triggered Insaan" className="event-banner"/>
+      </a>
+
+      <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7">
+        <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner"/>
+      </a>
+
+      <a href="https://forms.gle/ymQvC4XFwcTjTQCRA">
+        <img src={anshMehra} alt="Ansh Mehra" className="event-banner"/>
       </a>
 
       <div style={{display: 'flex', justifyContent: 'center'}}>
