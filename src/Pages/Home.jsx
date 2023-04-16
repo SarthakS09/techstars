@@ -1,6 +1,7 @@
 import React from 'react'
 import Register from '../Components/Register'
 import { useEffect } from 'react'
+import { Link as NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
@@ -8,6 +9,7 @@ import heroVideo from '../Assets/hero.mp4'
 import biggest from '../Assets/your-biggest.svg'
 import networking from '../Assets/networking.svg'
 import opportunity from '../Assets/opportunity.svg'
+import triggeredInsaan from '../Assets/triggered-insaan.png'
 import scrollDown from '../Assets/scroll.svg'
 import zeroToOne from '../Assets/zero-to-one.png'
 import pitchCafe from '../Assets/pitch-cafe.png'
@@ -20,7 +22,7 @@ import '../Styles/Home.css'
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    window.scrollTo(0, 0)
   }, [])
   return (
   <>
@@ -45,21 +47,30 @@ export default function Home() {
       <h1 className='t3 animate__animated animate__bounceInRight'>💸 opportunity.</h1> */}
       <div>
       <h3 className='center date'>APRIL 22<sup>nd</sup> & 23<sup>rd</sup>, 2023</h3>
-      <Link style={{ width: "100%", display: 'flex', justifyContent: 'center' }} to="events-start" smooth={true} offset={-200} duration={1500}>
+      <Link style={{ width: "100%", display: 'flex', justifyContent: 'center' }} to="speakers-start" smooth={true} offset={-200} duration={1500}>
         <img src={scrollDown} className='animate__animated animate__bounceInUp animate__delay-2s scroller'/>
       </Link>
       </div>
     </div>
 
-    <div className='eventsSection'>
-      <h2 id='events-start' className='center' data-aos="fade-up">Mind-Blowing Events. 🤯</h2>
-      <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inducing events, but we'd like to give you a taste of what's to come before we steal the show.</p>
-      <p className='center' data-aos="fade-up"><strong>Registrations are open for our offical pre-event</strong>, so what are you waiting for? Register now!</p>
-      
-      <a href="https://forms.gle/spYit3unTSUq2o618">
-        <img src={startupFair} alt="Startup Fair" className="event-banner" />
+    <div className="speakers">
+      <h2 id='speakers-start' className='center' data-aos="fade-up">gold-standard speakers.</h2>
+      <p className='center' data-aos="fade-up">Don't miss the chance to listen to some of the most influential people in this country speak about business, technology and life. <strong>Register now!</strong></p>
+      <a href="https://forms.gle/8YTCMbWMgYoaDRT2A">
+        <img src={triggeredInsaan} alt="Triggered Insaan" className="event-banner"/>
       </a>
 
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <NavLink to='/speakers' className='btn'>view all speakers →</NavLink>
+      </div>
+    </div>
+
+    <div className='eventsSection'>
+      <h2 id='events-start' className='center' data-aos="fade-up" style={{marginTop: "40px"}}>mind-blowing events.</h2>
+      <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inducing events. Have a glimpse of what's to come before we steal the show ;)</p>
+      <p className='center' data-aos="fade-up">Registrations are open for the following events, so what are you waiting for? <strong>Register now!</strong></p>
+
+      <div>
       <a href="https://forms.gle/TASM4aCHxcdSSE5RA">
         <img src={zeroToOne} alt="Zero to One" className="event-banner" />
       </a>
@@ -67,6 +78,15 @@ export default function Home() {
       <a href="https://forms.gle/buRwqAWz7uPKswzA7">
         <img src={pitchCafe} alt="Pitch Cafe" className="event-banner" />
       </a>  
+
+      <a href="https://forms.gle/spYit3unTSUq2o618">
+        <img src={startupFair} alt="Startup Fair" className="event-banner" />
+      </a>
+      </div>
+
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <NavLink to='/events' className='btn'>view all events →</NavLink>
+      </div>
 
       {/* <div className="two-events banner">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVjZcApKfejIsxoGEc4MJPiuBkLW910rYK0F3gH88e644o8A/viewform">
@@ -124,13 +144,13 @@ export default function Home() {
         <img src={sampleSpeakers}/>
     </div> */}
 
-    <Register/>
-
     <div className='collaborations'>
         <h2>industry collaborations. 🤝</h2>
         <p className='center'>We're backed by organisations that take pride in the entrepreneurship culture and bold spirit of IIIT-Delhi and beyond. </p>
         <img src={sampleCollabs} className='sample-collabs'/>
     </div>
+
+    
 
   </>
   )

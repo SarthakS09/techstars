@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import '../Styles/Schedule.css'
 
 function renderBlock(time, lhc, rnd) {
@@ -25,6 +26,9 @@ function renderBreak(time, text) {
 }
 
 export default function Schedule() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div className="about-header sched-header">

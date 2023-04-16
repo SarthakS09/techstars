@@ -55,17 +55,17 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          {/* <li>
+          <li>
             <NavLink to='/events' onClick={showSidebar}>
               <span>Events</span>
             </NavLink>
-          </li> */}
+          </li>
 
-          {/* <li>
+          <li>
             <NavLink to='/speakers' onClick={showSidebar}>
               <span>Speakers</span>
             </NavLink>
-          </li> */}
+          </li>
 
           <li>
             <NavLink to='/schedule' onClick={showSidebar}>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import girdhar from '../Assets/Team/girdhar.jpeg'
 import '../Styles/About.css'
 
@@ -16,6 +17,9 @@ function renderCard(image, name, designation, description) {
 }
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div className="about-header">

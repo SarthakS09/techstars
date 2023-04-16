@@ -88,7 +88,7 @@ li a.active:hover {
 .glow-on-hover {
     margin-right: 100px;
     top: -24%;
-    width: 130px;
+    padding: 0px 25px;
     height: 45px;
     font-size: 1.15rem;
     text-decoration: none;
@@ -99,7 +99,6 @@ li a.active:hover {
     color: #fff;
     background: #0E0E0E;
     position: relative;
-    z-index: 0;
     text-align: center;
     line-height: 45px;
     transition: 0.2s;
