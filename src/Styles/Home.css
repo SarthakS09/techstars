@@ -144,6 +144,18 @@ h1, h2, h3, h4, h5 {
     font-weight: 500;
     font-size: 1.4rem;
 }
+
+/* .speakers {
+    margin: auto;
+    max-width: 1600px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.speakers img {
+    display: inline;
+} */
+
 /* svg {
     position: relative;
     top: -2px;
@@ -233,53 +245,11 @@ img.event-banner:hover {
     filter: brightness(80%);
 }
 
-
-/* Speakers section */
-
-.speakers-card {
-    width: 75%;
-    max-width: 1050px;
-    margin: 50px auto;
-    background: #000000;
-    border-radius: 30px;
-    padding: 20px;
-    margin-bottom: 100px;
-    padding-bottom: 0;
-    text-align: center;
-}
-
-.speakers-card h2 {
-    color: #F9D182;
-    margin-bottom: 0px;
-}
-
-.speakers-card h3 {
-    width: 250px;
-    height: 48px;
-    border: 4px #FFFFFF solid;
-    margin: 40px auto;
-    border-radius: 20px;
-    background: #F9D182;
-    line-height: 240%;
-    text-align: center;
-    transition: 0.1s;
-    /* cursor: pointer; */
-}
-
-.speakers-card h3:hover {
-    background: #0E0E0E;
-}
-
-.speakers-card img {
-    width: 98%;
-    margin-top: 20px;
-}
-
 .sample-collabs {
     display: block;
     margin: auto;
     width: 90%;
-    max-width: 500px;
+    max-width: 675px;
     margin-bottom: 120px;
 }
 
@@ -289,7 +259,7 @@ img.event-banner:hover {
     }
 } */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .landing-text {
         width: 70%;
         transform: translateX(-4%);

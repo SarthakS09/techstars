@@ -1,5 +1,4 @@
 import React from 'react'
-import Register from '../Components/Register'
 import { useEffect } from 'react'
 import { Link as NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'

@@ -79,7 +79,7 @@ p a {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .ftr-section {
         height: 25vw;
     }

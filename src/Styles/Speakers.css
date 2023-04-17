@@ -1,0 +1,37 @@
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+img.event-banner-min {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 20px auto;
+    transition: 0.2s;
+    padding: 0px 20px;
+}
+
+img.event-banner-min:hover {
+    transform: translateY(-10px);
+    filter: brightness(80%);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    
+    img.event-banner-min {
+        width: 90%;
+        margin: 12px auto;
+        transition: 0.2s;
+        padding: 0px 20px;
+        padding: 0;
+    }
+}
