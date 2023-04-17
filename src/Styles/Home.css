@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 .scroller {
     position: absolute;
     top: 82vh;
-    /* cursor: pointer; */
+    cursor: pointer;
     width: 200px;
     animation: bounce 2000ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-delay: 1s;
@@ -96,43 +96,6 @@ h1, h2, h3, h4, h5 {
     color: #0E0E0E;
 }
 
-/* Events section */
-
-.spline {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    height: 500px;
-}
-
-.incubation { background: #0597BE; }
-.ecell-meet { background: #F04F3D; }
-.scam-2023 { background: rgb(18, 181, 111); }
-.number-painting { background: #e1a816; }
-.social-impact { background: #d68bf3; }
-
-.two-events {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 0;
-}
-/* .two-events a {
-    width: 100%;
-    text-decoration: none;
-    cursor: url('../Assets/money-custom-cursor.png'), auto;
-}
-.banner .card-large { width: 75% !important; margin: auto; background: #0E0E0E;}
-
-.banner h3, .banner p { text-align: left; padding: 0px 40px; }
-
-.banner .card-large p {
-    margin-top: 20px;
-    margin-bottom: -10px;
-} */
 .arrow {
     margin-top: -50px;
     display: flex;
@@ -144,93 +107,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 500;
     font-size: 1.4rem;
 }
-
-/* .speakers {
-    margin: auto;
-    max-width: 1600px;
-    border: 1px solid red;
-    display: flex;
-}
-
-.speakers img {
-    display: inline;
-} */
-
-/* svg {
-    position: relative;
-    top: -2px;
-    margin-left: -20px;
-    height: 20px;
-    width: 100px;
-    transition: 250ms all ease;
-    cursor: pointer;
-    align-items: center;
-}
-svg path {
-    stroke-width: 1px;
-    fill: #FFFFFF;
-    transition: 250ms all ease;
-    height: 100%;
-}
-.card-large:hover path {
-    fill: black;
-    d: path("M0 9.35772H50.9956L44.2001 2.29941L46.4134 0L57 11L46.4134 22L44.2001 19.7006L50.9956 12.6423H0V9.35772Z");
-    d: "M0 9.35772H50.9956L44.2001 2.29941L46.4134 0L57 11L46.4134 22L44.2001 19.7006L50.9956 12.6423H0V9.35772Z";
-}
-.banner-left {
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner-left img {
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.banner-right {
-    padding: 0px 40px;
-}
-
-.card-large, .card-small {
-    width: 48%;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.05s;
-    background: #9A71DB;
-    overflow: hidden;
-    border: 2px solid white;
-}
-
-.card-small {
-    width: 32%;
-}
-
-.card-large h3, .card-small h3 {
-    text-align: left;
-    padding: 0px 40px;
-}
-
-.card-large img, .card-small img {
-    width: 100%;
-    display: block;
-    border-radius: 20px;
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
-}
-
-.card-large p, .card-small p {
-    margin-top: -10px;
-    padding: 0px 40px;
-    padding-bottom: 40px;
-    font-weight: 500;
-}
-
-.card-large:hover, .card-small:hover {
-    background: #FFFFFF;
-    color: #0E0E0E; 
-    transition: 0.05s;
-} */
 
 img.event-banner {
     display: block;
@@ -253,18 +129,11 @@ img.event-banner:hover {
     margin-bottom: 120px;
 }
 
-/* @media only screen and (max-width: 1100px) {
-    .t1, .t2, .t3 {
-        width: 65%;
-    }
-} */
-
 @media only screen and (max-width: 768px) {
     .landing-text {
         width: 70%;
         transform: translateX(-4%);
     }
-
     img.event-banner {
         width: 90%;
         margin: 30px auto;
@@ -275,20 +144,15 @@ img.event-banner:hover {
     .t2 {
         width: 95%;
     }
-
     .landing {
         height: 70vh;
     }
-
     .scroller {
         top: 78vh;
         width: 125px;
     }
     .banner .card-large {
         width: 95% !important;
-    }
-    .two-events {
-        flex-direction: column;
     }
     .card-large, .card-small {
         width: 95%;
