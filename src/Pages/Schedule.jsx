@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import schedImage from '../Assets/schedule.svg'
 import '../Styles/Schedule.css'
 
 function renderBlock(time, lhc, rnd) {
@@ -36,7 +37,7 @@ export default function Schedule() {
         <p className='sched-p'>We recommend planning your day in advance to make the most of all the exciting things we have in store for you.</p>
       </div>
       <div className="sched-container">
-        <div className="buildings" data-aos="fade-up">
+        {/* <div className="buildings" data-aos="fade-up">
           <span className='rnd'><h4>R&D building</h4></span>
           <span className="line"></span>
           <span><h4>LHC building</h4></span>
@@ -52,7 +53,9 @@ export default function Schedule() {
         {renderBlock('5:45pm - 6:15pm', 'keynote session 2')}
         {renderBlock('6:15pm - 7:15pm', 'confluence', 'empathy board & number painting')}
 
-        {renderBreak('7:15pm - 8:00pm', 'meal and open networking')}
+        {renderBreak('7:15pm - 8:00pm', 'meal and open networking')} */}
+
+        <img src={schedImage} alt="schedule" className='sched-image' />
         
       </div>
     </>

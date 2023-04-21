@@ -8,9 +8,12 @@ import heroVideo from '../Assets/hero.mp4'
 import biggest from '../Assets/your-biggest.svg'
 import networking from '../Assets/networking.svg'
 import opportunity from '../Assets/opportunity.svg'
+import ashneer from '../Assets/ashneer.png'
 import triggeredInsaan from '../Assets/triggered-insaan.png'
 import saptarshi from '../Assets/saptarshi.png'
 import anshMehra from '../Assets/ansh-mehra.png'
+import sharkTank from '../Assets/shark-tank-panel.png'
+import socialIdeathon from '../Assets/social-ideathon.png'
 import scrollDown from '../Assets/scroll.svg'
 import zeroToOne from '../Assets/zero-to-one.png'
 import pitchCafe from '../Assets/pitch-cafe.png'
@@ -54,49 +57,57 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="speakers">
       <h2 id='speakers-start' className='center' data-aos="fade-up">gold-standard speakers.</h2>
       <p className='center' data-aos="fade-up">Don't miss the chance to listen to some of the most influential people in this country speak about business, technology and life. <strong>Register now!</strong></p>
+    <div className="container">
+
+      <a href="https://forms.gle/sdfdyeHz1NyTiP538" target='_blank'>
+        <img src={ashneer} alt="Ashneer Grover" className="event-banner-min"/>
+      </a>
       
-      <a href="https://forms.gle/8YTCMbWMgYoaDRT2A">
-        <img src={triggeredInsaan} alt="Triggered Insaan" className="event-banner"/>
+      <a href="https://forms.gle/8YTCMbWMgYoaDRT2A" target='_blank'>
+        <img src={triggeredInsaan} alt="Triggered Insaan" className="event-banner-min"/>
       </a>
 
-      <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7">
-        <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner"/>
-      </a>
+      {/* <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7" target='_blank'>
+        <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner-min"/>
+      </a> */}
 
-      <a href="https://forms.gle/ymQvC4XFwcTjTQCRA">
-        <img src={anshMehra} alt="Ansh Mehra" className="event-banner"/>
-      </a>
+      {/* <a href="https://forms.gle/ymQvC4XFwcTjTQCRA" target='_blank'>
+        <img src={anshMehra} alt="Ansh Mehra" className="event-banner-min"/>
+      </a> */}
 
+    </div>
       <div style={{display: 'flex', justifyContent: 'center'}}>
         <NavLink to='/speakers' className='btn'>view all speakers →</NavLink>
       </div>
-    </div>
 
-    <div className='eventsSection'>
       <h2 id='events-start' className='center' data-aos="fade-up" style={{marginTop: "40px"}}>mind-blowing events.</h2>
       <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inducing events. Have a glimpse of what's to come before we steal the show ;)</p>
       <p className='center' data-aos="fade-up">Registrations are open for the following events, so what are you waiting for? <strong>Register now!</strong></p>
+    <div className='container'>
 
-      <div>
-      <a href="https://forms.gle/TASM4aCHxcdSSE5RA">
-        <img src={zeroToOne} alt="Zero to One" className="event-banner" />
+      <a href="https://forms.gle/TASM4aCHxcdSSE5RA" target='_blank'>
+        <img src={zeroToOne} alt="Zero to One" className="event-banner-min" />
       </a>
       
-      <a href="https://forms.gle/buRwqAWz7uPKswzA7">
-        <img src={pitchCafe} alt="Pitch Cafe" className="event-banner" />
+      <a href="https://forms.gle/buRwqAWz7uPKswzA7" target='_blank'>
+        <img src={pitchCafe} alt="Pitch Cafe" className="event-banner-min" />
       </a>  
 
-      <a href="https://forms.gle/spYit3unTSUq2o618">
-        <img src={startupFair} alt="Startup Fair" className="event-banner" />
+      {/* <a href="https://forms.gle/spYit3unTSUq2o618" target='_blank'>
+        <img src={startupFair} alt="Startup Fair" className="event-banner-min" />
+      </a> */}
+      
+      <a>
+        <img src={sharkTank} alt="shark tank" className="event-banner-min"/> 
       </a>
-      </div>
 
-      <div style={{display: 'flex', justifyContent: 'center'}}>
-        <NavLink to='/events' className='btn'>view all events →</NavLink>
-      </div>
+      <a>
+        <img src={socialIdeathon} alt="social ideathon" className="event-banner-min"/>
+      </a>
+
+      
 
       {/* <div className="two-events banner">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVjZcApKfejIsxoGEc4MJPiuBkLW910rYK0F3gH88e644o8A/viewform">
@@ -146,6 +157,9 @@ export default function Home() {
           </div>
       </div> */}
     </div>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
+        <NavLink to='/events' className='btn'>view all events →</NavLink>
+      </div>
 
     {/* <div className='speakers-card' data-aos="fade-up">
         <h2>gold-standard speakers. 👌</h2>
@@ -159,8 +173,6 @@ export default function Home() {
         <p className='center'>We're backed by organisations that take pride in the entrepreneurship culture and bold spirit of IIIT-Delhi and beyond. </p>
         <img src={sampleCollabs} className='sample-collabs'/>
     </div>
-
-    
 
   </>
   )

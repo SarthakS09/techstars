@@ -28,7 +28,7 @@ export default function Navbar() {
       <>
       <div className='nav-fixed'>
           <div className='left'>
-            <img src={navLogo} className='esmt-icon'/>
+          <NavLink to='/'><img src={navLogo} className='esmt-icon'/></NavLink>
           </div>
           <div className='right'>
             <div className='hamburger-wrapper'>
@@ -39,15 +39,15 @@ export default function Navbar() {
 
       <div className='nav'>
         <div className='left'>
-            <img src={esmtLogo} className='esmt-logo'/>
+            <NavLink to='/'><img src={esmtLogo} className='esmt-logo'/></NavLink>
         </div>
 
         <div className='right'>
-          <Link to='https://forms.gle/qKoRhxmMKkL4XvES6' className='glow-on-hover'>Register Now</Link>
+          <Link to='https://forms.gle/qKoRhxmMKkL4XvES6' className='glow-on-hover' target='_blank'>Register Now</Link>
         </div>
       </div>
 
-      <nav className={(sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : (x==0 ? 'hidden' : 'nav-bar animate__animated animate__slideOutDown animate__faster'))}>
+      <nav className={(sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : (x===0 ? 'hidden' : 'nav-bar animate__animated animate__slideOutDown animate__faster'))}>
         <ul className='nav-menu-items'>
           <li>
             <NavLink to='/' onClick={showSidebar}>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <NavLink to='https://forms.gle/qKoRhxmMKkL4XvES6'>
+            <NavLink to='https://forms.gle/qKoRhxmMKkL4XvES6' target='_blank' onClick={showSidebar}>
               <span>Register</span>
             </NavLink>
           </li>

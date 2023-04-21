@@ -11,6 +11,12 @@
     margin-bottom: 100px;
 }
 
+.sched-image {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
 .buildings {
     display: flex;
     justify-content: space-evenly;

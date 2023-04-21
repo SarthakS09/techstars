@@ -110,6 +110,10 @@ li a.active:hover {
     color: #0E0E0E;
 }
 
+.esmt-logo {
+    z-index: 3;
+}
+
 @media only screen and (max-width: 768px) {
     .nav {
         width: calc(100vw - 60px);
