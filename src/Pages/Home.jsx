@@ -9,6 +9,7 @@ import biggest from '../Assets/your-biggest.svg'
 import networking from '../Assets/networking.svg'
 import opportunity from '../Assets/opportunity.svg'
 import ashneer from '../Assets/ashneer.png'
+import suri from '../Assets/suri.png'
 import triggeredInsaan from '../Assets/triggered-insaan.png'
 import saptarshi from '../Assets/saptarshi.png'
 import anshMehra from '../Assets/ansh-mehra.png'
@@ -61,12 +62,20 @@ export default function Home() {
       <p className='center' data-aos="fade-up">Don't miss the chance to listen to some of the most influential people in this country speak about business, technology and life. <strong>Register now!</strong></p>
     <div className="container">
 
-      <a href="https://forms.gle/sdfdyeHz1NyTiP538" target='_blank'>
+    <a href="https://forms.gle/sdfdyeHz1NyTiP538" target='_blank'>
         <img src={ashneer} alt="Ashneer Grover" className="event-banner-min"/>
       </a>
-      
-      <a href="https://forms.gle/8YTCMbWMgYoaDRT2A" target='_blank'>
-        <img src={triggeredInsaan} alt="Triggered Insaan" className="event-banner-min"/>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSecJjDEtRBMuTcufJXE5Bju3473tyFs5FQK15a-z7cG3sBPmA/viewform" target="_black">
+        <img src={suri} alt="Suri" className="event-banner-min"/>
+      </a>
+        <a href="https://forms.gle/8YTCMbWMgYoaDRT2A" target="_black">
+          <img src={triggeredInsaan} alt="Startup Fair" className="event-banner-min"/>
+        </a>
+
+
+        <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7" target="_black">
+        <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner-min"/>
       </a>
 
       {/* <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7" target='_blank'>
