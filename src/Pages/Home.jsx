@@ -2,10 +2,11 @@ import React from 'react'
 import { useEffect } from 'react'
 import { Link as NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
+import Spline from '@splinetool/react-spline'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import heroVideo from '../Assets/hero.mp4'
-import biggest from '../Assets/your-biggest.svg'
+import heroVideo from '../Assets/hero.mp4';
+import biggest from '../Assets/your-biggest.svg';
 import networking from '../Assets/networking.svg'
 import opportunity from '../Assets/opportunity.svg'
 import ashneer from '../Assets/ashneer.png'
@@ -27,16 +28,14 @@ import 'aos/dist/aos.css';
 import '../Styles/Home.css'
 
 export default function Home() {
+
+  // This ensures that all pages open with the scrollbar at the top
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
   return (
   <>
-    {/* <div className="spline">
-    <Spline scene="https://prod.spline.design/vhZtkdWG2LvATHy7/scene.splinecode" />
-    </div> */}
-    {/* <div id="blob"></div>
-    <div id="blur"></div> */}
     <div className="hero">
     <video className='hero-video' preload="auto" playsInline autoPlay loop muted>
       <source src={heroVideo} type="video/mp4"/>
@@ -48,22 +47,20 @@ export default function Home() {
       <img className='animate__animated animate__fadeInUp t2' src={networking}/>
       <img className='animate__animated animate__fadeInUp t3' src={opportunity}/>
     </div>
-      {/* <h1 className='t1 animate__animated animate__bounceInRight'>🚀 your biggest </h1>
-      <h1 className='t2 animate__animated animate__bounceInLeft'>networking 👨🏻‍💻</h1>
-      <h1 className='t3 animate__animated animate__bounceInRight'>💸 opportunity.</h1> */}
       <div>
-      <h3 className='center date'>APRIL 22<sup>nd</sup> & 23<sup>rd</sup>, 2023</h3>
-      <Link style={{ width: "100%", display: 'flex', justifyContent: 'center' }} to="speakers-start" smooth={true} offset={-200} duration={1500}>
-        <img src={scrollDown} className='animate__animated animate__bounceInUp animate__delay-2s scroller'/>
-      </Link>
+        <h3 className='center date'>APRIL 22<sup>nd</sup> & 23<sup>rd</sup>, 2023</h3>
+        <Link style={{ width: "100%", display: 'flex', justifyContent: 'center' }}to="speakers-start" smooth={true} offset={-200} duration={1500}>
+          <img src={scrollDown} className='animate__animated animate__bounceInUp animate__delay-2s scroller'/>
+        </Link>
       </div>
     </div>
 
-      <h2 id='speakers-start' className='center' data-aos="fade-up">gold-standard speakers.</h2>
-      <p className='center' data-aos="fade-up">Don't miss the chance to listen to some of the most influential people in this country speak about business, technology and life. <strong>Register now!</strong></p>
+    <h2 id='speakers-start' className='center' data-aos="fade-up">gold-standard speakers.</h2>
+    <p className='center' data-aos="fade-up">Don't miss the chance to listen to some of the most influential people in this country speak about business, technology and life. <strong>Register now!</strong></p>
+    
     <div className="container">
 
-    <a href="https://forms.gle/sdfdyeHz1NyTiP538" target='_blank'>
+      <a href="https://forms.gle/sdfdyeHz1NyTiP538" target='_blank'>
         <img src={ashneer} alt="Ashneer Grover" className="event-banner-min"/>
       </a>
 
@@ -79,22 +76,16 @@ export default function Home() {
         <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner-min"/>
       </a>
 
-      {/* <a href="https://forms.gle/3b7tY9Pe4NFgSzoF7" target='_blank'>
-        <img src={saptarshi} alt="Saptarshi Prakash" className="event-banner-min"/>
-      </a> */}
-
-      {/* <a href="https://forms.gle/ymQvC4XFwcTjTQCRA" target='_blank'>
-        <img src={anshMehra} alt="Ansh Mehra" className="event-banner-min"/>
-      </a> */}
-
     </div>
-      <div style={{display: 'flex', justifyContent: 'center'}}>
-        <NavLink to='/speakers' className='btn'>view all speakers →</NavLink>
-      </div>
 
-      <h2 id='events-start' className='center' data-aos="fade-up" style={{marginTop: "40px"}}>mind-blowing events.</h2>
-      <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inducing events. Have a glimpse of what's to come before we steal the show ;)</p>
-      <p className='center' data-aos="fade-up">Registrations are open for the following events, so what are you waiting for? <strong>Register now!</strong></p>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
+      <NavLink to='/speakers' className='btn'>view all speakers →</NavLink>
+    </div>
+
+    <h2 id='events-start' className='center' data-aos="fade-up" style={{marginTop: "40px"}}>mind-blowing events.</h2>
+    <p className='center' data-aos="fade-up">IIIT-Delhi's E-Summit'23 is packed with some of the most adrenaline-inducing events. Have a glimpse of what's to come before we steal the show ;)</p>
+    <p className='center' data-aos="fade-up">Registrations are open for the following events, so what are you waiting for? <strong>Register now!</strong></p>
+
     <div className='container'>
 
       <a href="https://forms.gle/TASM4aCHxcdSSE5RA" target='_blank'>
@@ -104,10 +95,6 @@ export default function Home() {
       <a href="https://forms.gle/buRwqAWz7uPKswzA7" target='_blank'>
         <img src={pitchCafe} alt="Pitch Cafe" className="event-banner-min" />
       </a>  
-
-      {/* <a href="https://forms.gle/spYit3unTSUq2o618" target='_blank'>
-        <img src={startupFair} alt="Startup Fair" className="event-banner-min" />
-      </a> */}
       
       <a>
         <img src={sharkTank} alt="shark tank" className="event-banner-min"/> 
@@ -117,7 +104,9 @@ export default function Home() {
         <img src={socialIdeathon} alt="social ideathon" className="event-banner-min"/>
       </a>
 
-      
+      {/* DO NOT REMOVE THIS LEGACY CODE!!!
+      THESE EVENTS HAVE BEEN POSTPONED TILL FURTHER NOTICE
+      Although they may never happen, there's a good chance the Organising Committee might change their minds. */}
 
       {/* <div className="two-events banner">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVjZcApKfejIsxoGEc4MJPiuBkLW910rYK0F3gH88e644o8A/viewform">
@@ -167,28 +156,16 @@ export default function Home() {
           </div>
       </div> */}
     </div>
+    
     <div style={{display: 'flex', justifyContent: 'center'}}>
-        <NavLink to='/events' className='btn'>view all events →</NavLink>
-      </div>
+      <NavLink to='/events' className='btn'>view all events →</NavLink>
+    </div>
 
-    {/* <div className='speakers-card' data-aos="fade-up">
-        <h2>gold-standard speakers. 👌</h2>
-        <p>Sample text demonstrating how cool and diverse our speaker line-up is</p>
-        <h4>view all speakers →</h4>
-        <img src={sampleSpeakers}/>
-    </div> */}
 
+    {/* Sponsorships section */}
     <div className='collaborations'>
         <h2>industry collaborations. 🤝</h2>
-
         <p className='center'>We're backed by organisations that take pride in the entrepreneurship culture and bold spirit of IIIT-Delhi and beyond. </p>
-
-        {/* <div className="haveon">
-        <a href="https://www.haveon.in/">
-          <img src={haveOn} alt="haveon.in" />
-        </a>
-        </div> */}
-
         <img src={collabs} className='sample-collabs'/>
     </div>
 

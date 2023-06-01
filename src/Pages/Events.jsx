@@ -10,9 +10,12 @@ import raaz from '../Assets/raaz.png'
 import adMad from '../Assets/ad-mad.png'
 
 export default function Events() {
+  
+  // This ensures that all pages open with the scrollbar at the top
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
   return (
     <>
         <h2 data-aos="fade-up">events that you'll never forget.</h2>
@@ -22,7 +25,7 @@ export default function Events() {
         <a href="https://forms.gle/TASM4aCHxcdSSE5RA" target="_black">
           <img src={zeroToOne} alt="Zero to One" className="event-banner-min" />
         </a>
-        
+  
         <a href="https://forms.gle/buRwqAWz7uPKswzA7" target="_black">
           <img src={pitchCafe} alt="Pitch Cafe" className="event-banner-min" />
         </a>  

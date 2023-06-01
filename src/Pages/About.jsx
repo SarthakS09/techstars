@@ -1,8 +1,9 @@
 import React from 'react'
 import { useEffect } from 'react'
-import girdhar from '../Assets/Team/girdhar.jpeg'
+import sampleImage from '../Assets/Team/girdhar.jpeg'
 import '../Styles/About.css'
 
+// Utility function for writing DRY code
 function renderCard(image, name, designation, description) {
   return(
       <div className="card" data-aos="fade-up">
@@ -29,26 +30,26 @@ export default function About() {
 
       <section className="yellow">
         <h2>convenors and mentors</h2>
+
+        {/* For full-width desktops, this div will have a layout of 3 cards in a row */}
         <div className="cards-section">
-
-          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+          {renderCard(sampleImage, 'Devanshi Goel', 'Convenor',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+          {renderCard(sampleImage, 'Akshmit Dewan', 'Convenor',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+          {renderCard(sampleImage, 'Hribhav Panchal', 'Mentor',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+          {renderCard(sampleImage, 'Aditya Girdhar', 'Web/Tech Lead',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+          {renderCard(sampleImage, 'Janesh Kapoor', 'Sponsorship Lead',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(girdhar, 'Firstname lastname', 'Designation',
+          {renderCard(sampleImage, 'Firstname lastname', 'Designation',
             '“A line that describes them briefly, written by them”')}
-
         </div>
       </section>
 
