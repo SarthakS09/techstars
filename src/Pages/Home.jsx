@@ -25,7 +25,7 @@ import haveOn from '../Assets/haveon.jpg'
 import collabs from '../Assets/sample-collabs.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../Styles/Home.css'
+import '../Styles/Home.scss'
 
 export default function Home() {
 

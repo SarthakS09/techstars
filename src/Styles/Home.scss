@@ -89,11 +89,10 @@ h1, h2, h3, h4, h5 {
     line-height: 45px;
     transition: 0.2s;
     margin-bottom: 60px;
-}
-
-.btn:hover {
-    background-color: #FFFFFF;
-    color: #0E0E0E;
+    &:hover {
+        background-color: #FFFFFF;
+        color: #0E0E0E;
+    }
 }
 
 .arrow {
@@ -101,24 +100,22 @@ h1, h2, h3, h4, h5 {
     display: flex;
     margin: 0px auto;
     align-items: center;
-}
-.arrow h3 {
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
+    h3 {
+        font-family: Inter, sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
 }
 
 img.event-banner {
     display: block;
-    
     max-width: 700px;
     margin: 45px auto;
     transition: 0.2s;
-}
-
-img.event-banner:hover {
-    transform: translateY(-10px);
-    filter: brightness(80%);
+    &:hover {
+        transform: translateY(-10px);
+        filter: brightness(80%);
+    }
 }
 
 .sample-collabs {
@@ -134,10 +131,9 @@ img.event-banner:hover {
     width: 200px;
     max-width: 300px;
     margin-bottom: 15px;
-}
-
-.haveon img {
-    width: 200px;
+    img {
+        width: 200px;
+    }
 }
 
 
