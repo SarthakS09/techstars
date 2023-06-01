@@ -12,7 +12,7 @@ export default function Navbar() {
     // Useful for UI analytics and hiding easter eggs
     const [x, setX] = useState(0);
 
-    // 'sidebar' denotes the current state of the navbar menu (expanded/collapsed)
+    // 'sidebar' denotes the current state of the navbar menu ( expanded / collapsed )
     const [sidebar, setSidebar] = useState(false);
 
     // showSidebar toggles the sidebar and increments 'x' by 1
