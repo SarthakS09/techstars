@@ -1,10 +1,11 @@
+// DEPRECATED COMPONENT
 import React, { useEffect, useState } from "react";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
   // Top: 0 takes us all the way back to the top of the page
-  // Behavior: smooth keeps it smooth!
+  // Behavior: 'smooth' keeps it smooth!
   const scrollToTop = () => {
     window.scrollTo({
       bottom: "100vh",
