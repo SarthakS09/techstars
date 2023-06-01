@@ -20,7 +20,8 @@ import zeroToOne from '../Assets/zero-to-one.png'
 import pitchCafe from '../Assets/pitch-cafe.png'
 import startupFair from '../Assets/startup-fair.png'
 import sampleSpeakers from '../Assets/sample-speakers.png'
-import sampleCollabs from '../Assets/sample-collabs.png'
+import haveOn from '../Assets/haveon.jpg'
+import collabs from '../Assets/sample-collabs.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../Styles/Home.css'
@@ -179,8 +180,16 @@ export default function Home() {
 
     <div className='collaborations'>
         <h2>industry collaborations. 🤝</h2>
+
         <p className='center'>We're backed by organisations that take pride in the entrepreneurship culture and bold spirit of IIIT-Delhi and beyond. </p>
-        <img src={sampleCollabs} className='sample-collabs'/>
+
+        {/* <div className="haveon">
+        <a href="https://www.haveon.in/">
+          <img src={haveOn} alt="haveon.in" />
+        </a>
+        </div> */}
+
+        <img src={collabs} className='sample-collabs'/>
     </div>
 
   </>

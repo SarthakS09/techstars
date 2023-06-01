@@ -129,6 +129,19 @@ img.event-banner:hover {
     margin-bottom: 120px;
 }
 
+.haveon {
+    margin: auto;
+    width: 200px;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.haveon img {
+    width: 200px;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     .landing-text {
         width: 70%;

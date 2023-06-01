@@ -10,12 +10,16 @@ export default function Footer() {
                 <img src={seeYou} className='see-you-img'/>
             </div>
             <div id='ftr-links' className='ftr-links'>
+                
+                {/* Social media links */}
                 <a href='https://www.instagram.com/esummit_iiitd/' target='_blank'>instagram →</a>
                 <a href='https://www.linkedin.com/company/entrepreneurship-summit-iiit-delhi/' target='_blank'>linkedin →</a>
                 <a href='https://twitter.com/ecell_iiitd' target='_blank'>twitter →</a>
+
             </div>
         </div>
         <div className='attr'>
+            {/* Attribution Text */}
             <div className="attr-text">
             <p className='left'>ESUMMIT'23 - IIIT DELHI'S FLAGSHIP ENTREPRENEURIAL SUMMIT</p>
             <p className='right'><a href='https://grdr.me' target='_blank'>DEVELOPED BY <u className='ag-name'>ADITYA GIRDHAR</u></a></p>

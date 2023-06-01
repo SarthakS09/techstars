@@ -12,35 +12,37 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css'
 
-function App() {
-
+function AnimatedBlob() {
+  
   // getting window width
-
-  // const [width, setWidth] = useState(window.innerWidth);
-  // useEffect(() => {
-  //   window.addEventListener('resize', ()=>{
-  //     setWidth(window.innerWidth);
-  //   });
-  //   return () => {
-  //       window.removeEventListener('resize', ()=>{
-  //         setWidth(window.innerWidth);
-  //       });
-  //   }
-  // }, []);
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener('resize', ()=>{
+      setWidth(window.innerWidth);
+    });
+    return () => {
+        window.removeEventListener('resize', ()=>{
+          setWidth(window.innerWidth);
+        });
+    }
+  }, []);
   
   // checking if display is mobile
+  const isMobile = (width <= 768);
+  if (!isMobile) {
+    document.body.onpointermove = event => {
+      const blob = document.getElementById('blob');
+      const { clientX, clientY } = event;
+      blob.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+      }, {duration: 4000, fill: "forwards"})
+    }
+  }
+}
 
-  // const isMobile = width <= 768;
-  // if (!isMobile) {
-  //   document.body.onpointermove = event => {
-  //     const blob = document.getElementById('blob');
-  //     const { clientX, clientY } = event;
-  //     blob.animate({
-  //       left: `${clientX}px`,
-  //       top: `${clientY}px`
-  //     }, {duration: 4000, fill: "forwards"})
-  //   }
-  // }
+function App() {
+  // Initialising the Animate on Scroll (AOS) library
   useEffect(() => {
     AOS.init();
   }, [])
