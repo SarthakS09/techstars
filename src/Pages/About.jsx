@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import sampleImage from '../Assets/Team/girdhar.jpeg'
-import '../Styles/About.css'
+import '../Styles/About.scss'
 
 // Utility function for writing DRY code
 function renderCard(image, name, designation, description) {

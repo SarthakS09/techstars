@@ -3,15 +3,14 @@
     max-width: 1100px;
     margin: auto;
     margin-top: 80px;
-}
-
-.about-header p {
-    width: 80%;
-    max-width: 900px;
-    margin: auto;
-    margin-bottom: 50px;
-    line-height: 180%;
-    font-size: 1.3rem;
+    p {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+        margin-bottom: 50px;
+        line-height: 180%;
+        font-size: 1.3rem;
+    }
 }
 
 .mark {
@@ -19,6 +18,7 @@
     top: -33px;
     position: relative;
 }
+
 .offsetMark {
     position: relative;
     top: 33px;
@@ -28,18 +28,9 @@ section {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-}
-
-section.yellow {
-    background-color: #F9D182;
-}
-
-section.purple {
-    background-color: #9B79F7;
-}
-
-section.green {
-    background-color: #5BB984;
+    &.yellow { background-color: #F9D182; }
+    &.purple { background-color: #9B79F7; }
+    &.green { background-color: #5BB984; }
 }
 
 .cards-section {
@@ -61,34 +52,25 @@ section.green {
     margin: 0px 20px;
     margin-bottom: 40px;
     height: 480px;
-}
-
-.card img {
-    margin-top: 40px;
-    width: 225px;
-    aspect-ratio: 1;
-    border-radius: 20px;
-}
-
-.card h4 {
-    margin: 0;
-}
-
-.card .name {
-    margin-top: 20px;
-    font-weight: 800;
-}
-
-.card .designation {
-    font-weight: 500;
-}
-
-.card .description {
-    margin: auto;
-    padding: 20px 0px;
-    width: 75%;
-    font-weight: 500;
-    font-style: italic;
+    img {
+        margin-top: 40px;
+        width: 225px;
+        aspect-ratio: 1;
+        border-radius: 20px;
+    }
+    h4 { margin: 0; }
+    .name {
+        margin-top: 20px;
+        font-weight: 800;
+    }
+    .designation { font-weight: 500; }
+    .description {
+        margin: auto;
+        padding: 20px 0px;
+        width: 75%;
+        font-weight: 500;
+        font-style: italic;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -111,15 +93,15 @@ section.green {
         margin: 0px 5px;
         margin-bottom: 15px;
         height: 100%;
-    }
-    .card img {
-        margin-top: 20px;
-        width: 150px;
-        aspect-ratio: 1;
-        border-radius: 15px;
-    }
-    .card .description {
-        width: 80%;
-        font-size: 0.8rem;
+        .img {
+            margin-top: 20px;
+            width: 150px;
+            aspect-ratio: 1;
+            border-radius: 15px;
+        }
+        .description {
+            width: 80%;
+            font-size: 0.8rem;
+        }
     }
 }
