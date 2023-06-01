@@ -1,4 +1,4 @@
-This repository hosts the source code for **E-Summit'23**: IIIT Delhi's Annual Entrepreneurship Conclave. This website uses the **React** library and is hosted on a dedicated NGINX server at [esummit.iiitd.edu.in](http://esummit.iiitd.edu.in). In case the previous link fails to open, there is also a Netlify mirror: [esmt23.netlify.app](http://esmt23.netlify.app).
+This repository hosts the source code for the official website of **E-Summit'23**: IIIT Delhi's Annual Entrepreneurship Conclave. This website uses the **React** library and is hosted on a dedicated NGINX server at [esummit.iiitd.edu.in](http://esummit.iiitd.edu.in). In case the previous link fails to open, there is also a Netlify mirror: [esmt23.netlify.app](http://esmt23.netlify.app).
 
 ## Code structure
 All of the React source code is located in the `/src` folder with assets in `/src/assets` and other static files in `/public`.
