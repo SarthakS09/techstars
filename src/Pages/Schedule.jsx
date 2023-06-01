@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import schedImage from '../Assets/schedule.svg'
-import '../Styles/Schedule.css'
+import '../Styles/Schedule.scss'
 
 function renderBlock(time, lhc, rnd) {
   return(
