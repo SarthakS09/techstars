@@ -5,7 +5,7 @@ import triggeredInsaan from '../Assets/triggered-insaan.png'
 import suri from '../Assets/suri.png'
 import saptarshi from '../Assets/saptarshi.png'
 import anshMehra from '../Assets/ansh-mehra.png'
-import '../Styles/Speakers.css'
+import '../Styles/Speakers.scss'
 
 export default function Speakers() {
 
