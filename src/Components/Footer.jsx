@@ -1,6 +1,6 @@
 import React from 'react'
 import seeYou from '../Assets/see-you.svg';
-import '../Styles/Footer.css'
+import '../Styles/Footer.scss'
 
 export default function Footer() {
   return (
