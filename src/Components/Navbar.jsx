@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import navLogo from '../Assets/logo-white.png';
 import esmtLogo from '../Assets/esmt.svg'
 import { Twirl as Hamburger } from 'hamburger-react'
-import '../Styles/Navbar.css'
+import '../Styles/Navbar.scss'
 
 
 export default function Navbar() {
