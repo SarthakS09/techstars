@@ -16,6 +16,7 @@ src
 │   │   └── Matter/...
 │   ├── Team/...
 ├── Components
+│   ├── Card.jsx
 │   ├── Footer.jsx
 │   ├── Navbar.jsx
 │   ├── Register.jsx
@@ -29,6 +30,7 @@ src
 │   └── Speakers.jsx
 ├── Styles
 │   ├── About.scss
+│   ├── Card.scss
 │   ├── Footer.scss
 │   ├── Home.scss
 │   ├── Navbar.scss
