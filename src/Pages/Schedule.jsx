@@ -5,12 +5,15 @@ import '../Styles/Schedule.scss'
 
 /*
 Utility function to render a schedule block.
+
 Arguments:
-- time: String denoting the time, will be rendered as passed
-- lhc: String denoting the name of the event happening in the LHC building
-- rnd: String denoting the name of the event happening in the R&D building
-- lhcId & rndId: Strings denoting the id of the given event/talk for the 'bookmarks' object
-- hasOpted & toggleBookmark: These have been passed from the parent component as props. The utility and usage of these functions has been explained in /src/App.jsx
+
+time:            String denoting the time, will be rendered as passed
+lhc:             String denoting the name of the event happening in the LHC building
+rnd:             String denoting the name of the event happening in the R&D building
+lhcId & rndId:   Strings denoting the id of an event for the 'bookmarks' object
+
+The utility and usage of the 'hasOpted' & 'toggleBookmark' functions has been explained in /src/App.jsx
 */
 function renderBlock(time, lhc, rnd, lhcId, rndId, hasOpted, toggleBookmark) {
   return(
@@ -26,9 +29,11 @@ function renderBlock(time, lhc, rnd, lhcId, rndId, hasOpted, toggleBookmark) {
 
 /*
 Utility function to render a break block.
+
 Arguments:
-- time: String denoting the time, will be rendered as passed
-- text: String denoting the context/reason for the break
+
+time:   String denoting the time, will be rendered as passed
+text:   String denoting the context/reason for the break
 */
 function renderBreak(time, text) {
   return(

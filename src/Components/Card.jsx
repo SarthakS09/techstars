@@ -1,6 +1,14 @@
 import React, { useState } from 'react'
 import '../Styles/Card.scss'
 
+/*
+Available props
+
+img   : Contains a reference image for the speaker/event;
+link  : String containing a URL to event registration form
+id    : String denoting the id of the given event/talk for the 'bookmarks' object
+*/
+
 export default function Card(props) {
 	const toggleBookmark = (id) => {
 		props.toggleBookmark(id)
