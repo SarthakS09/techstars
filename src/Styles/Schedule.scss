@@ -6,7 +6,7 @@
 
 .sched-container {
     width: 95%;
-    max-width: 750px;
+    max-width: 950px;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -41,7 +41,7 @@ p.sched-time {
     font-size: 1.4rem;
     letter-spacing: 4px;
     margin-top: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .time-flex {
@@ -49,19 +49,27 @@ p.sched-time {
     justify-content: center;
 }
 
-.time-card-lhc { background: #9A71DB; }
+.time-card-lhc { background: #9A71DB; transition: 0.2s; cursor: pointer; }
 
-.time-card-rnd { background: #50A274; }
+.time-card-rnd { background: #50A274; transition: 0.2s; cursor: pointer; }
 
 .time-card-empty { background: #282828; }
 
+.time-card-imp {
+    background: white !important;
+    color: black !important;
+    border: 1.5px solid #5BB984 !important;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 .time-card-break {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
 }
 
 .time-card-empty, .time-card-rnd, .time-card-lhc, .time-card-break {
-    border: 3px solid white;
+    border: 1.5px solid white;
     border-radius: 20px;
     width: 42%;
     margin: 10px 15px;
@@ -69,6 +77,7 @@ p.sched-time {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .time-card-break {
@@ -78,6 +87,7 @@ p.sched-time {
 .time-card-empty h4, .time-card-rnd h4, .time-card-lhc h4, .time-card-break h4 {
     font-size: 1.4rem;
     padding: 0px 10px;
+    margin: 18px auto;
 }
 
 @media only screen and (max-width: 768px) {
