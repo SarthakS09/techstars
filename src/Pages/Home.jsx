@@ -105,6 +105,7 @@ export default function Home() {
 
       {/* DO NOT REMOVE THIS LEGACY CODE!!!
       THESE EVENTS HAVE BEEN POSTPONED TILL FURTHER NOTICE
+      
       Although they may never happen, there's a good chance the Organising Committee might change their minds. */}
 
       {/* <div className="two-events banner">
