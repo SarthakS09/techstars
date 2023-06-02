@@ -27,7 +27,7 @@ export default function Card(props) {
 					className="event-banner-min" />
 			</a>
 			<button className='interest-bar' onClick={() => toggleBookmark(props.id)}>
-				{hasOpted(props.id) ? 'Bookmarked ✅' : 'Click to bookmark 📍'}
+				{hasOpted(props.id) ? 'Bookmarked ✅' : '📍 Click to bookmark 📍'}
 			</button>
 		</div>
 	</>
