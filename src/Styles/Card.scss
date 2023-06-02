@@ -1,0 +1,22 @@
+.interest-bar {
+	display: block;
+	background: black;
+	color: white;
+	border: 1px solid white;
+	margin: 10px 20px;
+	margin-top: -40px;
+	cursor: pointer;
+	padding: 30px 15px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	text-align: center;
+	transition: 0.2s;
+	font-size: 0.9rem;
+	font-weight: 600;
+	width: 93%;
+	&:hover {
+		background: white;
+		color: black;
+	}
+}

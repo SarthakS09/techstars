@@ -12,33 +12,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css'
 
-function AnimatedBlob() {
-  
-  // getting window width
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    window.addEventListener('resize', ()=>{
-      setWidth(window.innerWidth);
-    });
-    return () => {
-        window.removeEventListener('resize', ()=>{
-          setWidth(window.innerWidth);
-        });
-    }
-  }, []);
-  
-  // checking if display is mobile
-  const isMobile = (width <= 768);
-  if (!isMobile) {
-    document.body.onpointermove = event => {
-      const blob = document.getElementById('blob');
-      const { clientX, clientY } = event;
-      blob.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
-      }, {duration: 4000, fill: "forwards"})
-    }
-  }
+function onDelete(id) {
+
+}
+
+function isPresent(id) {
+
 }
 
 function App() {
@@ -46,13 +25,48 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, [])
+
+  // Initialising an object of preference mappings
+  const [bookmarks, setBookmarks] = useState({
+    'ashneerGrover': false,
+    'nishantSuri': false,
+    'triggeredInsaan': false,
+    'saptarishi': false,
+    'anshMehra': false,
+    'zeroToOne': false,
+    'startupFair': false,
+    'pitchCafe': false,
+    'raaz': false,
+    'adMad': false,
+    'sharkTank': false,
+    'godfather': false,
+    'socialIdeathon': false
+  });
+
+  // if (localStorage.getItem("bookmarks"))
+  //   setBookmarks(JSON.parse(localStorage.getItem("bookmarks")));
+
+  const toggleBookmark = (id) => {
+    console.log('toggle called!')
+    console.log(id)
+    console.log(bookmarks[id])
+    setBookmarks((prevBookmarks) => ({
+      ...prevBookmarks, [id]: !prevBookmarks[id],
+    }));
+    console.log(bookmarks[id])
+  }
+
+  const hasOpted = (id) => {
+    return bookmarks[id];
+  }
+
   return (
     <>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/events" element={<Events/>}/>
-        <Route path="/speakers" element={<Speakers/>}/>
+        <Route path="/events" element={<Events toggleBookmark={toggleBookmark} hasOpted={hasOpted} />}/>
+        <Route path="/speakers" element={<Speakers toggleBookmark={toggleBookmark} hasOpted={hasOpted} />}/>
         <Route path="/schedule" element={<Schedule/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path='*' element={<PageNotFound/>}/>

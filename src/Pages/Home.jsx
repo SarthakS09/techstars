@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect } from 'react'
 import { Link as NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
-import Spline from '@splinetool/react-spline'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import heroVideo from '../Assets/hero.mp4';
