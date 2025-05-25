@@ -1,51 +1,55 @@
-import React from 'react'
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import navLogo from '../Assets/logo-white.png';
-import esmtLogo from '../Assets/esmt.svg'
-import { Twirl as Hamburger } from 'hamburger-react'
-import '../Styles/Navbar.scss'
-
+import esmtLogo from '../Assets/esmt.svg';
+import { Twirl as Hamburger } from 'hamburger-react';
+import '../Styles/Navbar.scss';
 
 export default function Navbar() {
-    // 'x' denotes the number of times the hamburger button has been clicked
-    // Useful for UI analytics and hiding easter eggs
-    const [x, setX] = useState(0);
+  const [x, setX] = useState(0);
+  const [sidebar, setSidebar] = useState(false);
 
-    // 'sidebar' denotes the current state of the navbar menu ( expanded / collapsed )
-    const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => {
+    setX(x + 1);
+    setSidebar(!sidebar);
+  };
 
-    // showSidebar toggles the sidebar and increments 'x' by 1
-    const showSidebar = () => {
-      setX(x+1);
-      setSidebar(!sidebar);
-    }
-
-    return (
-      <>
-      <div className='nav-fixed'>
-          <div className='left'> {/* All elements in this div are fixed at the top-left of the browser viewport */}
-          <NavLink to='/'><img src={navLogo} className='esmt-icon'/></NavLink>
+  return (
+    <>
+      {/* Fixed top navbar visible only when sidebar is closed */}
+      {!sidebar && (
+        <div className='nav-fixed'>
+          <div className='left'>
+            <NavLink to='/'><img src={navLogo} className='esmt-icon' alt='Logo' /></NavLink>
           </div>
-          <div className='right'> {/* All elements in this div are fixed at the top-right of the browser viewport */}
+          <div className='right'>
             <div className='hamburger-wrapper'>
-              <Hamburger toggled={sidebar} className='hb' size={22} color='black' onToggle={showSidebar}/>
+              <Hamburger toggled={sidebar} className='hb' size={22} color='black' onToggle={showSidebar} />
             </div>
           </div>
-      </div>
+        </div>
+      )}
 
+      {/* Normal navbar (absolute) */}
       <div className='nav'>
-        <div className='left'> {/* All elements in this div are positioned absolutely at the top-left of the page */}
-            <NavLink to='/'><img src={esmtLogo} className='esmt-logo'/></NavLink>
+        <div className='left'>
+          <NavLink to='/'><img src={esmtLogo} className='esmt-logo' alt='ESMT Logo' /></NavLink>
         </div>
-        <div className='right'> {/* All elements in this div are positioned absolutely at the top-right of the page */}
-          <Link to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header' className='glow-on-hover' target='_blank'>Register Now</Link>
+        <div className='right'>
+          <Link to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
+            className='glow-on-hover' target='_blank' rel='noopener noreferrer'>
+            Register Now
+          </Link>
         </div>
       </div>
 
-      {/* Navigation bar with class toggling logic */}
-      <nav className={(sidebar ? 'nav-bar active animate__animated animate__slideInUp animate__faster' : (x===0 ? 'hidden' : 'nav-bar animate__animated animate__slideOutDown animate__faster'))}>
-        
+      {/* Sidebar navigation menu */}
+      <nav className={
+        sidebar
+          ? 'nav-bar active animate__animated animate__slideInUp animate__faster'
+          : (x === 0 ? 'hidden' : 'nav-bar animate__animated animate__slideOutDown animate__faster')
+      }>
         <ul className='nav-menu-items'>
           <li>
             <NavLink to='/' onClick={showSidebar}>
@@ -68,8 +72,8 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            {/* This links to the registration form. To open the link in the same tag, remove the 'target' attribute */}
-            <NavLink to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header' target='_blank' onClick={showSidebar}>
+            <NavLink to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
+              target='_blank' rel='noopener noreferrer' onClick={showSidebar}>
               <span>Register</span>
             </NavLink>
           </li>
@@ -78,6 +82,6 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
-      </>
-    )
+    </>
+  );
 }
