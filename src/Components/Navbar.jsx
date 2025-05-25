@@ -39,7 +39,7 @@ export default function Navbar() {
             <NavLink to='/'><img src={esmtLogo} className='esmt-logo'/></NavLink>
         </div>
         <div className='right'> {/* All elements in this div are positioned absolutely at the top-right of the page */}
-          <Link to='https://forms.gle/qKoRhxmMKkL4XvES6' className='glow-on-hover' target='_blank'>Register Now</Link>
+          <Link to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header' className='glow-on-hover' target='_blank'>Register Now</Link>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
           </li>
           <li>
             {/* This links to the registration form. To open the link in the same tag, remove the 'target' attribute */}
-            <NavLink to='https://forms.gle/qKoRhxmMKkL4XvES6' target='_blank' onClick={showSidebar}>
+            <NavLink to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header' target='_blank' onClick={showSidebar}>
               <span>Register</span>
             </NavLink>
           </li>

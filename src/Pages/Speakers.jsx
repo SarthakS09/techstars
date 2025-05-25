@@ -18,37 +18,37 @@ export default function Speakers({hasOpted, toggleBookmark}) {
     <>
       <h2 data-aos="fade-up">remarkable speakers.</h2>
       <p className='center' data-aos="fade-up">
-        What do you get when you take the brighest entrepreneurial minds of the country, put them together at one place and let them talk about their life experiences? That's right, you get IIIT-Delhi's E-Summit'23.
+        What do you get when you take the brighest entrepreneurial minds of the country, put them together at one place and let them talk about their life experiences? That's right, you get TECH STARS GLAU.
       </p>
       
       <div className="container">
         <Card
           img={ashneer}
-          link='https://forms.gle/sdfdyeHz1NyTiP538'
+          link='https://www.google.com/'
           id='ashneerGrover'
           toggleBookmark={toggleBookmark}
           hasOpted={hasOpted} />
         <Card
           img={suri}
-          link='https://docs.google.com/forms/d/e/1FAIpQLSecJjDEtRBMuTcufJXE5Bju3473tyFs5FQK15a-z7cG3sBPmA/viewform'
+          link='https://www.google.com/'
           id='nishantSuri'
           toggleBookmark={toggleBookmark}
           hasOpted={hasOpted} />
         <Card
           img={triggeredInsaan}
-          link='https://forms.gle/8YTCMbWMgYoaDRT2A'
+          link='https://www.google.com/'
           id='triggeredInsaan'
           toggleBookmark={toggleBookmark}
           hasOpted={hasOpted} />
         <Card
           img={saptarshi}
-          link='https://forms.gle/3b7tY9Pe4NFgSzoF7'
+          link='https://www.google.com/'
           id='saptarishi'
           toggleBookmark={toggleBookmark}
           hasOpted={hasOpted} />
         <Card
           img={anshMehra}
-          link='https://forms.gle/ymQvC4XFwcTjTQCRA'
+          link='https://www.google.com/'
           id='anshMehra'
           toggleBookmark={toggleBookmark}
           hasOpted={hasOpted} />

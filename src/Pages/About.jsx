@@ -33,19 +33,19 @@ export default function About() {
 
         {/* For full-width desktops, this div will have a layout of 3 cards in a row */}
         <div className="cards-section">
-          {renderCard(sampleImage, 'Devanshi Goel', 'Convenor',
+          {renderCard(sampleImage, 'Krishna Mittal', 'President',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(sampleImage, 'Akshmit Dewan', 'Convenor',
+          {renderCard(sampleImage, 'Abhay K. Dwivedi', 'Vise-President',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(sampleImage, 'Hribhav Panchal', 'Mentor',
+          {renderCard(sampleImage, 'Sajal Gupta', 'Vice-President',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(sampleImage, 'Aditya Girdhar', 'Web/Tech Lead',
+          {renderCard(sampleImage, 'Rishi Gupta', 'Vice-President',
             '“A line that describes them briefly, written by them”')}
 
-          {renderCard(sampleImage, 'Janesh Kapoor', 'Sponsorship Lead',
+          {renderCard(sampleImage, 'Harsh Kushwaha', 'Webmaster',
             '“A line that describes them briefly, written by them”')}
 
           {renderCard(sampleImage, 'Firstname lastname', 'Designation',

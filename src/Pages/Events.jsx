@@ -29,31 +29,31 @@ export default function Events({toggleBookmark, hasOpted}) {
         <div className="container">
           <Card
             img={zeroToOne}
-            link='https://forms.gle/TASM4aCHxcdSSE5RA'
+            link='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
             id={'zeroToOne'}
             toggleBookmark={toggleBookmark}
             hasOpted={hasOpted} />
           <Card
             img={startupFair}
-            link='https://forms.gle/spYit3unTSUq2o618'
+            link='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
             id={'startupFair'}
             toggleBookmark={toggleBookmark}
             hasOpted={hasOpted} />
           <Card
             img={pitchCafe}
-            link='https://forms.gle/buRwqAWz7uPKswzA7'
+            link='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
             id='pitchCafe'
             toggleBookmark={toggleBookmark}
             hasOpted={hasOpted} />
           <Card
             img={raaz}
-            link='https://docs.google.com/forms/d/e/1FAIpQLScN1tspPinpYk26KAAsInA8K0kJ_LyiUvGolnBet8s2dpb9lQ/viewform'
+            link='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
             id='raaz'
             toggleBookmark={toggleBookmark}
             hasOpted={hasOpted} />
           <Card
             img={adMad}
-            link='https://docs.google.com/forms/d/e/1FAIpQLSffj9zsrgpwMw1KxxQ81BmitfFpdtmf60s8IZ7Dn86mmIHtEw/viewform'
+            link='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
             id='adMad'
             toggleBookmark={toggleBookmark}
             hasOpted={hasOpted} />
@@ -64,7 +64,7 @@ export default function Events({toggleBookmark, hasOpted}) {
             hasOpted={hasOpted} />
           <Card
             img={godfather}
-            link='https://docs.google.com/forms/d/e/1FAIpQLSdzeD8ILrUeM3HOw4iCRhSfxMcDMxIQ2h5qGEOYsPy1odoyRA/viewform'
+            link='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform?usp=header'
             id='godfather'
             toggleBookmark={toggleBookmark}
             hasOpted={hasOpted} />

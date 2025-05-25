@@ -83,43 +83,43 @@ export default function Schedule(props) {
           '', '', props.hasOpted, props.toggleBookmark)}
         {renderBlock(
           '1:30pm - 2:30pm',
-          'Keynote: Ansh Mehra',
-          'Zero to One',
-          'anshMehra', 'zeroToOne', props.hasOpted, props.toggleBookmark)}
+          'Keynote: event',
+          'event',
+          'event', 'event', props.hasOpted, props.toggleBookmark)}
         {renderBlock(
           '2:30pm - 3:15pm',
-          'Keynote: Saptarshi Prakash',
-          'Pitch Café',
-          'saptarishi', 'pitchCafe', props.hasOpted, props.toggleBookmark)}
+          'Keynote: event',
+          'event',
+          'event', 'event', props.hasOpted, props.toggleBookmark)}
 
         {renderBreak(
           '3:15pm - 3:45pm',
-          'snacks and networking')}
+          'break')}
 
         {renderBlock(
           '3:45pm - 5:15pm',
-          'Performance: Nishant Suri', 
-          'Startup Fair', 
-          'nishantSuri', 'startupFair', props.hasOpted, props.toggleBookmark)}
+          'Performance: event', 
+          'event', 
+          'event', 'event', props.hasOpted, props.toggleBookmark)}
         {renderBlock(
           '5:15pm - 5:45pm',
-          'Talk: Ashneer Grover',
-          'Ad Mad',
-          'ashneerGrover', 'adMad', props.hasOpted, props.toggleBookmark)}
+          'Talk: Aevent',
+          'event',
+          'event', 'event', props.hasOpted, props.toggleBookmark)}
         {renderBlock(
           '5:45pm - 6:15pm',
-          'Talk: Triggered Insaan',
-          'Shark Tank Panel',
-          'triggeredInsaan', 'sharkTank', props.hasOpted, props.toggleBookmark)}
+          'Talk: event',
+          'Shark Tank',
+          'event', 'event', props.hasOpted, props.toggleBookmark)}
         {renderBlock(
           '6:15pm - 7:15pm',
-          'Raaz',
-          'Godfather', 
-          'raaz', 'godfather', props.hasOpted, props.toggleBookmark)}
+          'event',
+          'event', 
+          'event', 'event', props.hasOpted, props.toggleBookmark)}
 
         {renderBreak(
           '7:15pm - 8:00pm',
-          'meal and open networking')}
+          'meal')}
 
         {/* <img src={schedImage} alt="schedule" className='sched-image' /> */}
         
