@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import sampleImage from '../Assets/Team/girdhar.jpeg';
+import sampleImage from '../Assets/Team/ecell.jpeg';
 import member1Image from '../Assets/Team/member1.jpg'; // Add actual image paths
 import member2Image from '../Assets/Team/member2.jpg';
-import member3Image from '../Assets/Team/girdhar.jpeg';
+import member3Image from '../Assets/Team/ecell.jpeg';
 import member4Image from '../Assets/Team/member4.jpg';
-import member5Image from '../Assets/Team/girdhar.jpeg';
+import member5Image from '../Assets/Team/ecell.jpeg';
 import '../Styles/Team.scss'; // Update the stylesheet if necessary
 
 // Utility function for writing DRY code
