@@ -22,7 +22,7 @@ export default function Footer() {
             {/* Attribution Text */}
             <div className="attr-text">
             <p className='left'>TECH STARS - E-CELL GLAU</p>
-            <p className='right'><a href='https://grdr.me' target='_blank'>DEVELOPED BY <u className='ag-name'>SARTHAK SINGH</u></a></p>
+            <p className='right'><a href='https://www.instagram.com/_sarthak._.singh_/' target='_blank'>DEVELOPED BY <u className='ag-name'>SARTHAK SINGH</u></a></p>
             </div>
         </div>
     </>
