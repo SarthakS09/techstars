@@ -32,7 +32,7 @@ export default function Navbar() {
                     <NavLink to='/'><img src={esmtLogo} className='esmt-logo' alt="ESMT Logo" /></NavLink>
                 </div>
                 <div className='right'>
-                    <Link to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform' className='glow-on-hover' target='_blank'>Register Now</Link>
+                    <Link to='https://docs.google.com/forms/d/e/1FAIpQLScJNydNjVT6jTqrM--_0Re7qhwKI20eATplWn0dkJJzvzS_aQ/viewform' className='glow-on-hover' target='_blank'>Register</Link>
                 </div>
             </div>
 
